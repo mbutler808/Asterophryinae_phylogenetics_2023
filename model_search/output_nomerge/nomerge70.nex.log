@@ -1,0 +1,506 @@
+IQ-TREE multicore version 2.2.2.6 COVID-edition for Mac OS X 64-bit built May 27 2023
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams, Ly Trong Nhan.
+
+Host:    Marguerites-MacBook-Pro.local (AVX2, FMA3, 16 GB RAM)
+Command: iqtree2 -s ../../mesquite_alignment/asterophryinae_20230527.phy -p nomerge70.nex -m TESTONLY -o UMMZ219489_Scaphiophryne_marmorata --date ../input/asterophryinae_dates.txt --date-tip 0 -mset JC,F81,K80,HKY,TN,TNe,TPM2,TPM2u,TPM3,TPM3u,TIM,TIMe,TIM2,TIM2e,TIM3,TIM3e,TVMe,TVM,SYM,GTR
+Seed:    408187 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Jun 30 23:05:56 2023
+Kernel:  AVX+FMA - 1 threads (16 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 16 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file nomerge70.nex ...
+Reading alignment file ../../mesquite_alignment/asterophryinae_20230527.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Constructing alignment: done in 0.00754905 secs using 74.91% CPU
+Alignment has 243 sequences with 2475 columns, 1397 distinct patterns
+951 parsimony-informative, 195 singleton sites, 1329 constant sites
+                                                 Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.000874043 secs using 99.42% CPU
+   1  ABTC116941_Oreophryne_A_graminis                  21.21%    passed      9.55%
+   2  BPBM47733_Choerophryne_darlingtoni_complex_sp_1    0.28%    passed     96.47%
+   3  BPBM47780_Cophixalus_cf__cryptotympanum            2.14%    passed     91.89%
+   4  BPBM47792_Hylophorbus_cf__rufescens_14             0.24%    passed     73.43%
+   5  BPBM47804_Cophixalus_darlingtoni                   5.41%    passed     97.97%
+   6  BPBM31882_Paedophryne_swiftorum_complex_sp_1      22.42%    passed     19.17%
+   7  BPBM47713_Paedophryne_amauensis                    0.08%    passed     92.69%
+   8  BPBM47786_Callulops_sp_2                           3.68%    passed     93.47%
+   9  UMMZ242263_Cophixalus_variabilis_complex_sp_1      1.25%    passed     72.15%
+  10  UMMZ242338_Liophryne_aff__dentata_1                0.00%    passed     17.66%
+  11  UMMZ242317_Hylophorbus_cf__rufescens_1             0.00%    passed     95.84%
+  12  UMMZ242212_Austrochaperina_C_aff__palmipes_1       1.70%    passed     77.48%
+  13  UMMZ242361_Mantophryne_cf__lateralis_1             0.04%    passed     85.64%
+  14  UMMZ242309_Genyophryne_aff__thomsoni_1             0.44%    passed     87.07%
+  15  UMMZ242349_Cophixalus_verrucosus_complex_sp_1      1.41%    passed     98.49%
+  16  UMMZ242404_Oreophryne_A_sp_8                       0.00%    passed     13.68%
+  17  UMMZ242232_Cophixalus_desticans_complex_sp_1       0.36%    passed     45.79%
+  18  UMMZ242226_Callulops_doriae_complex_sp_1           0.20%    passed     66.15%
+  19  FK16913_Paedophryne_titan                          0.48%    passed     19.31%
+  20  UMMZ242398_Oreophryne_B_penelopia                  0.12%    passed     94.92%
+  21  BPBM47888_Hylophorbus_cf__rufescens_13             4.24%    passed     97.92%
+  22  JAM11383_Oreophryne_B_sp_5                         1.82%    passed     81.64%
+  23  BPBM35843_Cophixalus_cf__pipilans_1                0.20%    passed     23.94%
+  24  BPBM40083_Copiula_sp_1                             1.29%    passed     78.66%
+  25  BPBM20571_Oreophryne_B_sp_2                        0.20%    passed     73.92%
+  26  BPBM22664_Austrochaperina_A_sp_1                   1.58%    passed     79.89%
+  27  BPBM20396_Mantophryne_cf__lateralis_1              0.24%    passed     93.85%
+  28  BPBM48036_Paedophryne_sp_2                        20.00%    passed     26.99%
+  29  BPBM35561_Choerophryne_gudrunae                    1.41%    passed     97.18%
+  30  BPBM40135_Mantophryne_insignis                     0.12%    passed     84.17%
+  31  BPBM39638_Hylophorbus_myopicus                     1.49%    passed     99.99%
+  32  BPBM20572_Oreophryne_B_sp_3                        5.17%    passed     94.78%
+  33  BPBM13110_Asterophrys_slateri                      0.93%    passed     34.06%
+  34  BPBM33669_Callulops_wilhelmanus                    0.20%    passed     97.14%
+  35  BPBM16554_Oreophryne_A_philosylleptoris            0.20%    passed     14.99%
+  36  BPBM20262_Copiula_sp_2                             5.86%    passed     88.01%
+  37  BPBM39000_Oreophryne_B_sp_1                        0.20%    passed     83.71%
+  38  BPBM34677_Oreophryne_A_cameroni                    5.74%    passed     47.62%
+  39  BPBM38990_Oreophryne_A_sp_2                        0.81%    passed     25.21%
+  40  BPBM16181_Hylophorbus_cf__rufescens_2              0.24%    passed     96.64%
+  41  BPBM39048_Cophixalus_sp_3                          0.69%    passed     49.14%
+  42  BPBM34688_Oreophryne_A_biroi                       0.16%    passed     28.32%
+  43  BPBM38939_Copiula_sp_7                            20.04%    passed     38.28%
+  44  BPBM22675_Choerophryne_longirostris                0.12%    passed     95.84%
+  45  BPBM18450_Hylophorbus_cf__rufescens_6              0.20%    passed     83.41%
+  46  BPBM22504_Hylophorbus_cf__rufescens_12             1.45%    passed     82.71%
+  47  BPBM39357_Oreophryne_B_sp_6                        0.32%    passed     87.04%
+  48  BPBM20522_Oreophryne_A_aurora                      0.28%    passed     94.28%
+  49  BPBM40145_Oreophryne_A_sp_6                        2.46%    passed     30.65%
+  50  BPBM39569_Hylophorbus_cf__rufescens_9              0.04%    passed     99.01%
+  51  BPBM22780_Mantophryne_cf__lateralis_3              1.25%    passed     99.37%
+  52  BPBM39007_Copiula_sp_3                            20.97%    passed     20.72%
+  53  BPBM19265_Mantophryne_cf__lateralis_4              1.29%    passed     99.09%
+  54  BPBM33763_Oreophryne_A_anamiatoi                   0.12%    passed     59.28%
+  55  BPBM22692_Cophixalus_balbus                        1.45%    passed     98.69%
+  56  BPBM39244_Oreophryne_A_sp_3                        1.58%    passed     45.35%
+  57  BPBM22689_Oreophryne_A_cf__cameroni                1.82%    passed     47.97%
+  58  BPBM18430_Cophixalus_albolineatus                  1.21%    passed     68.12%
+  59  BPBM38988_Oreophryne_B_sp_4                        2.34%    passed     84.17%
+  60  BPBM33707_Cophixalus_caverniphilus                 1.98%    passed     83.33%
+  61  BPBM39991_Choerophryne_bryonopsis                  1.70%    passed     58.79%
+  62  BPBM39631_Hylophorbus_cf__rufescens_7              0.24%    passed     98.62%
+  63  BPBM19320_Cophixalus_nexipus                       1.70%    passed     88.30%
+  64  BPBM37122_Callulops_sp_1                           0.04%    passed     91.58%
+  65  BPBM34724_Hylophorbus_atrifasciatus                0.04%    passed     90.35%
+  66  BPBM18392_Cophixalus_cheesmanae_complex_sp_1       3.07%    passed     75.09%
+  67  BPBM39929_Liophryne_miniafia                       0.00%    passed     96.71%
+  68  BPBM35866_Hylophorbus_cf__rufescens_15             0.04%    passed     95.71%
+  69  BPBM17959_Cophixalus_sp_4                          0.16%    passed     93.36%
+  70  BPBM40000_Austrochaperina_A_sp_2                   0.04%    passed     80.32%
+  71  BPBM19277_Cophixalus_iovaorum                      0.16%    passed     86.61%
+  72  BPBM19338_Hylophorbus_cf__rufescens_10             0.20%    passed     99.67%
+  73  BPBM37232_Hylophorbus_cf__rufescens_3              0.28%    passed     96.46%
+  74  BPBM38914_Barygenys_maculata                       0.12%    passed     12.48%
+  75  BPBM19371_Oreophryne_A_sp_4                        0.00%    passed     76.04%
+  76  BPBM33749_Hylophorbus_richardsi                    0.08%    passed     85.68%
+  77  BPBM18429_Cophixalus_albolineatus                  2.55%    passed     84.93%
+  78  BPBM33664_Choerophryne_darlingtoni_complex_sp_2    0.81%    passed     98.97%
+  79  BPBM34679_Choerophryne_proboscidea                 0.57%    passed     92.16%
+  80  BPBM20538_Oreophryne_B_sp_3                        0.85%    passed     99.66%
+  81  BPBM19314_Cophixalus_ateles                        2.18%    passed     95.88%
+  82  BPBM38992_Oreophryne_A_sp_2                        1.98%    passed     32.16%
+  83  BPBM39510_Oreophryne_B_phoebe                      1.54%    passed     55.09%
+  84  BPBM37718_Cophixalus_clapporum                    20.97%    passed     29.43%
+  85  BPBM39344_Oreophryne_B_sp_4                        1.25%    passed     47.26%
+  86  BPBM38904_Barygenys_apodasta                       1.62%    passed     59.57%
+  87  BPBM20126_Barygenys_aff__exsul_1                   1.78%    passed     37.71%
+  88  BPBM15814_Cophixalus_variabilis_complex_sp_2       5.17%    passed     97.39%
+  89  BPBM15708_Cophixalus_desticans_complex_sp_2        0.16%    passed     62.84%
+  90  BPBM33674_Oreophryne_A_notata                      2.79%    failed      2.70%
+  91  BPBM35692_Hylophorbus_cf__proekes                  1.78%    passed     61.30%
+  92  BPBM20141_Callulops_doriae_complex_sp_2            1.78%    passed     44.43%
+  93  BPBM17048_Hylophorbus_cf__rufescens_11             1.82%    passed     97.23%
+  94  BPBM18509_Oreophryne_A_lemur                       1.41%    passed     85.36%
+  95  BPBM33780_Xenorhina_parkerorum                     2.75%    passed     65.65%
+  96  BPBM15259_Barygenys_resima                         1.94%    passed     46.96%
+  97  BPBM20501_Oreophryne_B_meliades                    0.32%    passed     84.93%
+  98  BPBM35986_Hylophorbus_cf__rufescens_17             2.02%    passed     95.61%
+  99  BPBM27491_Cophixalus_verrucosus_complex_sp_3       1.13%    passed     84.53%
+ 100  BPBM15775_Oreophryne_B_equus                       1.45%    passed     73.95%
+ 101  BPBM15410_Mantophryne_cf__lateralis_2              1.25%    passed     97.74%
+ 102  BPBM39366_Oreophryne_A_sp_5                        1.86%    passed     85.78%
+ 103  BPBM37753_Paedophryne_dekot                        1.86%    passed     98.15%
+ 104  BPBM15707_Cophixalus_sp_5                          0.08%    passed     91.41%
+ 105  BPBM35735_Austrochaperina_B_sp_3                   0.00%    passed     96.97%
+ 106  TNHC58922_Oreophryne_B_variabilis                  3.19%    passed     63.47%
+ 107  CMNH1366_Oreophryne_A_anulata                      2.30%    passed     10.09%
+ 108  KU321316_Oreophryne_A_nana                         1.78%    passed     12.42%
+ 109  BPBM18605_Copiula_fistulans                        0.36%    passed     87.37%
+ 110  BPBM41683_Aphantophryne_B_pansa_3                  3.03%    passed     96.17%
+ 111  BPBM41681_Aphantophryne_B_pansa_3                  4.57%    passed     99.64%
+ 112  BPBM41685_Aphantophryne_B_pansa_3                  1.37%    passed     99.58%
+ 113  BPBM41682_Aphantophryne_B_pansa_3                  1.37%    passed     97.50%
+ 114  BPBM17084_Copiula_oxyrhina                         1.25%    passed     92.19%
+ 115  BPBM13862_Austrochaperina_B_macrorhyncha           0.85%    passed     96.89%
+ 116  BPBM18351_Choerophryne_gunnari                     2.26%    passed     53.32%
+ 117  BPBM20357_Genyophryne_thomsoni                     1.94%    passed     66.57%
+ 118  BPBM22740_Hylophorbus_cf__rufescens_16             1.13%    passed     95.74%
+ 119  BPBM20369_Hylophorbus_extimus                      0.85%    passed     97.32%
+ 120  BPBM22761_Hylophorbus_proekes                      0.85%    passed     97.50%
+ 121  BPBM15373_Liophryne_aff__dentata_2                 1.37%    passed     39.86%
+ 122  BPBM22754_Liophryne_schlaginhaufeni                1.13%    passed     51.32%
+ 123  BPBM20142_Mantophryne_louisiadensis                3.39%    passed     84.93%
+ 124  BPBM22511_Oreophryne_A_brachypus                   1.58%    passed     44.48%
+ 125  BPBM18510_Oreophryne_A_cf__geislerorum_1           1.17%    passed     28.54%
+ 126  BPBM17847_Choerophryne_sanguinopictus              1.66%    passed     98.69%
+ 127  BPBM16217_Oreophryne_A_inornata                    0.93%    passed     66.60%
+ 128  BPBM16546_Oreophryne_B_insulana                    2.63%    passed     77.54%
+ 129  BPBM22539_Oreophryne_A_loriae                      1.41%    passed     71.70%
+ 130  BPBM17890_Oxydactyla_crassa                        1.21%    passed     76.22%
+ 131  BPBM31477_Mantophryne_menziesi                     0.89%    passed     97.70%
+ 132  BPBM22793_Sphenophryne_cornuta                     3.64%    passed     60.22%
+ 133  BPBM22797_Xenorhina_arboricola                     0.89%    failed      3.82%
+ 134  BPBM28179_Xenorhina_mehelyi                        0.89%    passed     16.59%
+ 135  BPBM14060_Xenorhina_ocellata                       2.46%    passed     37.00%
+ 136  BPBM22795_Xenorhina_tumulus                        0.81%    passed      6.45%
+ 137  BPBM28153_Asterophrys_leucopus                     0.89%    passed     61.81%
+ 138  BPBM22649_Choerophryne_brunhildae                  0.97%    passed     90.84%
+ 139  BPBM18317_Choerophryne_exclamitans                 1.54%    passed     91.37%
+ 140  BPBM28204_Asterophrys_turpicola                    0.97%    passed     58.86%
+ 141  BPBM22665_Austrochaperina_B_basipalmata            1.62%    passed     71.42%
+ 142  BPBM22656_Austrochaperina_B_blumi                  1.29%    passed     90.15%
+ 143  BPBM22708_Copiula_tyleri                           0.04%    passed     73.84%
+ 144  BPBM22481_Austrochaperina_A_novaebritanniae        1.66%    passed     85.30%
+ 145  BPBM20112_Austrochaperina_A_yelaensis              3.84%    passed     71.99%
+ 146  BPBM15234_Austrochaperina_C_aff__palmipes_3        0.12%    passed     96.68%
+ 147  BPBM25756_Barygenys_atra                           0.85%    passed     48.80%
+ 148  BPBM25760_Barygenys_sp                             0.04%    passed     99.76%
+ 149  BPBM18504_Callulops_personatus                     0.89%    passed     99.31%
+ 150  BPBM13155_Callulops_eremnosphax                    1.62%    passed     91.50%
+ 151  BPBM20215_Cophixalus_cupricarenus                  2.51%    passed     94.72%
+ 152  BPBM20197_Cophixalus_melanops                      2.34%    passed     67.49%
+ 153  BPBM15665_Copiula_minor                            1.13%    passed     64.01%
+ 154  BPBM20287_Copiula_sp_6                            22.38%    passed     16.64%
+ 155  BPBM17827_Copiula_sp_4                             1.13%    passed     88.97%
+ 156  BPBM18388_Austrochaperina_A_parkeri                0.85%    passed     88.37%
+ 157  BPBM15355_Hylophorbus_cf__rufescens_4              1.13%    passed     85.72%
+ 158  BPBM18033_Hylophorbus_cf__rufescens_8              1.05%    passed     96.59%
+ 159  BPBM18441_Hylophorbus_cf__rufescens_12             1.45%    passed     82.05%
+ 160  BPBM18315_Liophryne_allisoni                       0.85%    passed     56.84%
+ 161  BPBM19360_Liophryne_magnitympanum                  1.29%    passed     64.63%
+ 162  BPBM20397_Mantophryne_axanthogaster                0.89%    passed     99.82%
+ 163  BPBM22784_Oreophryne_A_parkeri                    21.70%    passed     21.52%
+ 164  BPBM18128_Oreophryne_B_picticrus                   1.90%    passed     63.74%
+ 165  BPBM18002_Oreophryne_A_sp_7                        1.90%    passed     69.63%
+ 166  BPBM17980_Oreophryne_B_matawan                     6.95%    passed     80.26%
+ 167  BPBM22668_Austrochaperina_B_septentrionalis        1.86%    passed     64.19%
+ 168  BPBM22789_Oreophryne_A_parkopanorum                1.17%    passed     14.80%
+ 169  BPBM21474_Xenorhina_adisca                         1.09%    passed     36.91%
+ 170  BPBM22685_Choerophryne_rostellifer                 0.12%    passed     87.98%
+ 171  UMMZ211174_Dyscophis_antongilli                    2.18%    passed     83.75%
+ 172  UMMZ211181_Platypelis_grandis                      2.42%    passed     70.24%
+ 173  UMMZ219489_Scaphiophryne_marmorata                 0.08%    passed     78.02%
+ 174  BPBM20128_Barygenys_exsul                          0.89%    passed      8.09%
+ 175  ZMB74609_Asterophrys_senglaubi                     1.37%    passed     49.03%
+ 176  ZMB70535_Asterophrys_eurydactylus                  1.29%    passed     19.20%
+ 177  ZMB70187_Asterophrys_cf__marani                    1.58%    passed     20.41%
+ 178  ZMB63882_Asterophrys_marani                        2.63%    passed     41.04%
+ 179  ZMB70185_Asterophrys_cf__marani                    1.54%    passed     20.66%
+ 180  FK15527_Paedophryne_verrucosa                      1.49%    passed     23.68%
+ 181  BPBM39156_Oreophryne_A_sp_1                        0.81%    passed     33.73%
+ 182  BPBM19236_Callulops_bicolor                        1.54%    passed     56.88%
+ 183  BPBM35836_Callulops_microtis                       0.93%    passed     88.48%
+ 184  BPBM34741_Xenorhina_obesa                          0.85%    passed     34.03%
+ 185  BPBM20532_Oreophryne_B_sp_3                        0.89%    passed     99.80%
+ 186  BPBM15232_Austrochaperina_C_aff__palmipes_3        0.89%    passed     85.63%
+ 187  BPBM20469_Oreophryne_B_ezra                        4.16%    passed     43.13%
+ 188  BPBM33637_Choerophryne_murrita                     0.97%    passed     98.62%
+ 189  BPBM40143_Oreophryne_B_brunnea                     0.04%    passed     46.21%
+ 190  BPBM18097_Cophixalus_timidus                       1.29%    passed     86.62%
+ 191  BPBM20440_Oreophryne_B_meliades                    0.32%    passed     87.83%
+ 192  BPBM34697_Xenorhina_oxycephala                     0.00%    passed     29.10%
+ 193  BPBM16806_Callulops_robustus                       0.04%    passed     91.68%
+ 194  MB233_Cophixalus_sp_1                              2.71%    passed     72.25%
+ 195  MB291_Paedophryne_sp_1                             3.64%    passed     82.45%
+ 196  MB294_Hylophorbus_cf__rufescens_12                 0.04%    passed     87.76%
+ 197  MB300_Choerophryne_gunnari                         0.12%    passed     45.68%
+ 198  MB302_Cophixalus_sp_2                              0.00%    passed     54.57%
+ 199  MB309_Copiula_sp_5                                 2.51%    passed     68.74%
+ 200  MB327_Xenorhina_sp_1                              19.64%    passed     13.01%
+ 201  MB331_Mantophryne_cf__lateralis_4                  0.04%    passed     89.04%
+ 202  MB342_Oreophryne_A_loriae                          1.25%    passed     65.21%
+ 203  MB463_Choerophryne_sp_2                            0.44%    passed     84.51%
+ 204  MB466_Choerophryne_sp_1                            0.00%    passed     99.97%
+ 205  MB470_Cophixalus_cheesmanae_complex_sp_2           1.25%    passed     38.85%
+ 206  MB472_Choerophryne_sp_4                            0.00%    passed     58.32%
+ 207  MB475_Austrochaperina_C_aff__palmipes_4            0.00%    passed     98.73%
+ 208  MB479_Mantophryne_cf__lateralis_5                  2.91%    passed     97.33%
+ 209  MB482_Cophixalus_linnaeus                          0.24%    passed     86.61%
+ 210  MB483_Hylophorbus_cf__rufescens_5                  0.04%    passed     83.80%
+ 211  MB484_Oreophryne_A_cf__geislerorum_2               0.73%    passed     21.20%
+ 212  MB486_Paedophryne_swiftorum_complex_sp_2           6.51%    passed     30.11%
+ 213  MB508_Callulops_doriae_complex_sp_1                1.17%    passed     41.26%
+ 214  MB518_Mantophryne_cf__lateralis_1                  3.23%    passed     95.34%
+ 215  MB539_Austrochaperina_C_aff__palmipes_2            1.17%    passed     73.66%
+ 216  MB556_Hylophorbus_cf__rufescens_1                  1.25%    passed     94.67%
+ 217  MB571_Cophixalus_variabilis_complex_sp_3           0.00%    passed     93.13%
+ 218  MB583_Cophixalus_verrucosus_complex_sp_2           1.17%    passed     97.96%
+ 219  MB593_Liophryne_aff__dentata_3                     1.25%    passed     47.32%
+ 220  MB617_Cophixalus_desticans_complex_sp_1            0.00%    passed     44.75%
+ 221  MB626_Genyophryne_aff__thomsoni_2                  1.41%    passed     96.99%
+ 222  MB627_Oreophryne_B_penelopia                       1.33%    passed     80.92%
+ 223  BPBM31979_Hylophorbus_cf__rufescens_5              3.27%    passed     84.86%
+ 224  BPBM26182_Cophixalus_tomaiodactylus                1.29%    passed     98.98%
+ 225  BPBM23740_Callulops_personatus                     1.09%    passed     99.20%
+ 226  BPBM25837_Choerophryne_sp_3                        1.45%    passed     97.75%
+ 227  BPBM26194_Cophixalus_phaeobalius                   1.41%    passed     98.50%
+ 228  BPBM25754_Choerophryne_sp_4                        1.41%    passed     55.30%
+ 229  BPBM31337_Cophixalus_linnaeus                      1.37%    passed     86.56%
+ 230  BPBM31847_Cophixalus_cf__pipilans_2                0.28%    passed     71.98%
+ 231  BPBM31853_Genyophryne_aff__thomsoni_3              2.83%    passed     43.85%
+ 232  BPBM31808_Choerophryne_sp_1                        1.45%    passed     97.99%
+ 233  BPBM35367_Choerophryne_sp_4                        0.04%    passed     66.59%
+ 234  AA24862_Asterophrys_sp                             2.34%    passed     16.35%
+ 235  BPBM44363_Aphantophryne_sabini                     0.12%    passed     98.52%
+ 236  BPBM44369_Aphantophryne_sabini                     0.20%    passed     99.05%
+ 237  BPBM44373_Aphantophryne_sabini                     0.20%    passed     98.72%
+ 238  BJE1120_Oreophryne_A_senckenbergiana               1.29%    passed     44.37%
+ 239  BJE1143_Oreophryne_A_senckenbergiana               1.21%    passed     43.67%
+ 240  BJE1144_Oreophryne_A_senckenbergiana               1.21%    passed     43.14%
+ 241  BJE1248_Oreophryne_A_frontifasciata                1.58%    passed     63.05%
+ 242  BPBM43952_Aphantophryne_pansa                      1.62%    passed     99.66%
+ 243  BPBM43954_Aphantophryne_pansa                      1.29%    passed     99.95%
+****  TOTAL                                              2.05%  2 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 15 partitions...
+Identifying sites to remove: done in 0.000416994 secs using 85.85% CPU
+Identifying sites to remove: done in 0.000387192 secs using 87.3% CPU
+Identifying sites to remove: done in 0.000529051 secs using 80.9% CPU
+Identifying sites to remove: done in 0.000453949 secs using 84.15% CPU
+Identifying sites to remove: done in 0.000316143 secs using 95.84% CPU
+Identifying sites to remove: done in 0.000566006 secs using 80.92% CPU
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		243	136	4	118	TESTONLY	sia_pos1
+2		243	136	0	128	TESTONLY	sia_pos2
+WARNING: No parsimony-informative sites in partition sia_pos2
+3		243	135	72	45	TESTONLY	sia_pos3
+4		243	173	78	78	TESTONLY	bdnf_pos1
+5		243	172	16	154	TESTONLY	bdnf_pos2
+6		243	172	4	163	TESTONLY	bdnf_pos3
+7		243	185	16	144	TESTONLY	nxc_pos1
+8		243	185	10	164	TESTONLY	nxc_pos2
+9		243	185	96	52	TESTONLY	nxc_pos3
+10		242	170	86	72	TESTONLY	cyb_pos1
+11		242	170	59	99	TESTONLY	cyb_pos2
+12		242	170	170	0	TESTONLY	cyb_pos3
+13		235	162	110	39	TESTONLY	nd4_pos1
+14		235	162	68	73	TESTONLY	nd4_pos2
+15		235	162	162	0	TESTONLY	nd4_pos3
+Degree of missing data: 0.007
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.073 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Initial log-likelihood: -99237.271
+Current log-likelihood at step 1: -85782.618
+Current log-likelihood at step 2: -84351.136
+Current log-likelihood at step 3: -84247.088
+Current log-likelihood at step 4: -84223.101
+Current log-likelihood at step 5: -84174.911
+Current log-likelihood at step 6: -84166.900
+Current log-likelihood at step 7: -84165.220
+Parameters optimization took 6 rounds (10.966 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Perform nearest neighbor interchange...
+Optimizing NNI: done in 3.3623 secs using 99.91% CPU
+Estimate model parameters (epsilon = 1.000)
+Initial log-likelihood: -83898.315
+Current log-likelihood at step 1: -83895.211
+Current log-likelihood at step 2: -83894.739
+Partition-specific rates:  0.125 0.259 1.099 0.481 0.254 0.611 0.697 0.386 0.438 1.489 0.633 2.734 2.382 0.780 2.613
+Parameters optimization took 1 rounds (1.721 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Time for fast ML tree search: 16.093 seconds
+
+NOTE: ModelFinder requires 5 MB RAM!
+Selecting individual models for 15 charsets using BIC...
+ No. Model        Score       TreeLen     Charset
+   1 TNe+I+G4     1058.498    0.650       sia_pos1
+   2 JC+I+G4      610.710     3.077       sia_pos2
+   3 TN+F+I+G4    6855.110    7.917       sia_pos3
+   4 K2P+I+G4     5844.433    3.311       bdnf_pos1
+   5 TVMe+I+G4    1596.202    0.698       bdnf_pos2
+   6 TIMe+I+G4    815.953     4.086       bdnf_pos3
+   7 TIM2+F+I+G4  2074.995    0.945       nxc_pos1
+   8 TIM3e+I+G4   1649.153    2.378       nxc_pos2
+   9 TN+F+G4      6785.359    3.098       nxc_pos3
+  10 TPM2+I+G4    13895.320   10.981      cyb_pos1	0h:0m:26s (0h:0m:13s left)
+  11 GTR+F+I+G4   5829.630    4.386       cyb_pos2	0h:0m:30s (0h:0m:10s left)
+  12 TIM2+F+ASC+G4 50114.550   90.135      cyb_pos3	0h:0m:39s (0h:0m:9s left)
+  13 TIM2+F+I+G4  16921.554   16.573      nd4_pos1	0h:0m:41s (0h:0m:6s left)
+  14 GTR+F+I+G4   7038.678    5.473       nd4_pos2	0h:0m:45s (0h:0m:3s left)
+  15 TN+F+ASC     46713.367   72.777      nd4_pos3	0h:0m:54s (0h:0m:0s left)
+Full partition model BIC score: 171853.871 (LnL: -83633.528  df:587)
+Partition information was printed to nomerge70.nex.best_scheme.nex
+Partition information in Raxml format was printed to nomerge70.nex.best_scheme
+
+All model information printed to nomerge70.nex.model.gz
+CPU time for ModelFinder: 70.331 seconds (0h:1m:10s)
+Wall-clock time for ModelFinder: 70.612 seconds (0h:1m:10s)
+
+NOTE: 45 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -83634.361
+Current log-likelihood at step 1: -83625.693
+Current log-likelihood at step 2: -83625.220
+Current log-likelihood at step 3: -83625.108
+Current log-likelihood at step 4: -83625.049
+Current log-likelihood at step 5: -83625.004
+Current log-likelihood at step 6: -83624.859
+Current log-likelihood at step 7: -83624.819
+Current log-likelihood at step 8: -83624.784
+Current log-likelihood at step 9: -83624.752
+Current log-likelihood at step 10: -83624.719
+Current log-likelihood at step 11: -83624.690
+Current log-likelihood at step 12: -83624.660
+Current log-likelihood at step 13: -83624.630
+Current log-likelihood at step 14: -83624.603
+Current log-likelihood at step 15: -83624.578
+Current log-likelihood at step 16: -83624.554
+Current log-likelihood at step 17: -83624.532
+Current log-likelihood at step 18: -83624.509
+Current log-likelihood at step 19: -83624.487
+Current log-likelihood at step 20: -83624.464
+Current log-likelihood at step 21: -83624.443
+Current log-likelihood at step 22: -83624.422
+Current log-likelihood at step 23: -83624.401
+Current log-likelihood at step 24: -83624.381
+Current log-likelihood at step 25: -83624.360
+Current log-likelihood at step 26: -83624.340
+Current log-likelihood at step 27: -83624.323
+Current log-likelihood at step 28: -83624.305
+Current log-likelihood at step 29: -83624.288
+Current log-likelihood at step 30: -83624.271
+Current log-likelihood at step 31: -83624.256
+Current log-likelihood at step 32: -83624.238
+Current log-likelihood at step 33: -83624.221
+Current log-likelihood at step 34: -83624.206
+Current log-likelihood at step 35: -83624.190
+Current log-likelihood at step 36: -83624.176
+Current log-likelihood at step 37: -83624.160
+Current log-likelihood at step 38: -83624.145
+Current log-likelihood at step 39: -83624.132
+Current log-likelihood at step 40: -83624.116
+Current log-likelihood at step 41: -83624.101
+Current log-likelihood at step 42: -83624.088
+Current log-likelihood at step 43: -83624.074
+Current log-likelihood at step 44: -83624.060
+Current log-likelihood at step 45: -83624.047
+Current log-likelihood at step 46: -83624.035
+Current log-likelihood at step 47: -83624.021
+Current log-likelihood at step 48: -83624.007
+Current log-likelihood at step 49: -83623.994
+Current log-likelihood at step 50: -83623.982
+Current log-likelihood at step 51: -83623.968
+Current log-likelihood at step 52: -83623.955
+Current log-likelihood at step 53: -83623.943
+Current log-likelihood at step 54: -83623.931
+Current log-likelihood at step 55: -83623.919
+Current log-likelihood at step 56: -83623.905
+Current log-likelihood at step 57: -83623.893
+Current log-likelihood at step 58: -83623.881
+Current log-likelihood at step 59: -83623.869
+Current log-likelihood at step 60: -83623.857
+Current log-likelihood at step 61: -83623.844
+Current log-likelihood at step 62: -83623.832
+Current log-likelihood at step 63: -83623.820
+Current log-likelihood at step 64: -83623.808
+Current log-likelihood at step 65: -83623.796
+Current log-likelihood at step 66: -83623.780
+Current log-likelihood at step 67: -83623.766
+Current log-likelihood at step 68: -83623.754
+Current log-likelihood at step 69: -83623.741
+Current log-likelihood at step 70: -83623.728
+Current log-likelihood at step 71: -83623.716
+Current log-likelihood at step 72: -83623.704
+Current log-likelihood at step 73: -83623.691
+Current log-likelihood at step 74: -83623.679
+Current log-likelihood at step 75: -83623.667
+Current log-likelihood at step 76: -83623.655
+Current log-likelihood at step 77: -83623.643
+Current log-likelihood at step 78: -83623.631
+Current log-likelihood at step 79: -83623.620
+Current log-likelihood at step 80: -83623.608
+Current log-likelihood at step 81: -83623.595
+Current log-likelihood at step 82: -83623.584
+Current log-likelihood at step 83: -83623.573
+Current log-likelihood at step 84: -83623.562
+Current log-likelihood at step 85: -83623.550
+Current log-likelihood at step 86: -83623.538
+Current log-likelihood at step 87: -83623.527
+Current log-likelihood at step 88: -83623.516
+Current log-likelihood at step 89: -83623.505
+Current log-likelihood at step 90: -83623.494
+Current log-likelihood at step 91: -83623.483
+Current log-likelihood at step 92: -83623.472
+Current log-likelihood at step 93: -83623.461
+Current log-likelihood at step 94: -83623.450
+Current log-likelihood at step 95: -83623.439
+Current log-likelihood at step 96: -83623.428
+Current log-likelihood at step 97: -83623.417
+Current log-likelihood at step 98: -83623.407
+Current log-likelihood at step 99: -83623.397
+Partition-specific rates:  0.040 0.152 0.513 0.216 0.043 0.188 0.066 0.154 0.202 0.722 0.292 6.048 1.099 0.361 4.862
+Parameters optimization took 99 rounds (47.412 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Wrote distance file to... 
+Partition information was printed to nomerge70.nex.best_model.nex
+BEST SCORE FOUND : -83623.397
+Total tree length: 15.341
+
+Total number of iterations: 0
+CPU time used for tree search: 0.000 sec (0h:0m:0s)
+Wall-clock time used for tree search: 0.000 sec (0h:0m:0s)
+Total CPU time used: 47.351 sec (0h:0m:47s)
+Total wall-clock time used: 47.487 sec (0h:0m:47s)
+
+Analysis results written to: 
+  IQ-TREE report:                nomerge70.nex.iqtree
+  Tree used for ModelFinder:     nomerge70.nex.treefile
+  Best partitioning scheme:      nomerge70.nex.best_scheme.nex
+           in RAxML format:      nomerge70.nex.best_scheme
+  Screen log file:               nomerge70.nex.log
+
+--- Start phylogenetic dating ---
+Reading date file ../input/asterophryinae_dates.txt ...
+5 dates extracted
+Building time tree by least-square dating (LSD) with command:
+lsd -i nomerge70.nex.timetree.subst -s 2475 -o nomerge70.nex.timetree -g nomerge70.nex.timetree.outgroup -d nomerge70.nex.timetree.date -z 0 
+Reroot the tree(s) using given outgroups ...
+
+TREE 1
+*PROCESSING:
+Reading the tree ... 
+Collapse 3 (over 241) internal branches having branch length <= 0.000202
+ (settable via option -l)
+Parameter to adjust variances was set to 0.0211 (settable via option -b)
+Minimum branch length of time scaled tree (settable via option -u and -U): 0
+Estimating the root position on the branch defined by given outgroups ...
+
+*RESULTS:
+- Dating results:
+ rate 0.0086307, tMRCA -24.978 , objective function 1.20068
+
+TOTAL ELAPSED TIME: 0.00587 seconds
+LSD results written to:
+  LSD report:                  nomerge70.nex.timetree.lsd
+  Time tree in nexus format:   nomerge70.nex.timetree.nex
+  Time tree in newick format:  nomerge70.nex.timetree.nwk
+
+--- End phylogenetic dating ---
+Date and Time: Fri Jun 30 23:07:54 2023

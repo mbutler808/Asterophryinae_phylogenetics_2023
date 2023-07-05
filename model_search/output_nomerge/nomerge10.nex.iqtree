@@ -1,0 +1,650 @@
+IQ-TREE 2.2.2.6 COVID-edition built May 27 2023
+
+Partition file name: nomerge10.nex
+Input file name: ../../mesquite_alignment/asterophryinae_20230527.phy
+Type of analysis: ModelFinder + tree reconstruction
+Random seed number: 349124
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst. Biol., 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+Since you used least square dating (LSD) please also cite: 
+
+Thu-Hien To, Matthieu Jung, Samantha Lycett, Olivier Gascuel (2016)
+Fast dating using least-squares criteria and algorithms. Syst. Biol. 65:82-97.
+https://doi.org/10.1093/sysbio/syv068
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 243 taxa with 15 partitions and 2475 total sites (0.731263% missing data)
+
+  ID	Type	Seq	Site	Unique	Infor	Invar	Const	Name
+   1	DNA	243	136	50	4	118	118	sia_pos1
+   2	DNA	243	136	49	0	128	128	sia_pos2
+   3	DNA	243	135	115	72	45	45	sia_pos3
+   4	DNA	243	173	125	78	78	78	bdnf_pos1
+   5	DNA	243	172	59	16	154	154	bdnf_pos2
+   6	DNA	243	172	48	4	163	163	bdnf_pos3
+   7	DNA	243	185	69	16	144	144	nxc_pos1
+   8	DNA	243	185	60	10	164	164	nxc_pos2
+   9	DNA	243	185	151	96	52	52	nxc_pos3
+  10	DNA	242	170	114	86	72	72	cyb_pos1
+  11	DNA	242	170	95	59	99	99	cyb_pos2
+  12	DNA	242	170	170	170	0	0	cyb_pos3
+  13	DNA	235	162	135	110	39	39	nd4_pos1
+  14	DNA	235	162	105	68	73	73	nd4_pos2
+  15	DNA	235	162	162	162	0	0	nd4_pos3
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: TNe+I+G4:sia_pos1,JC+I+G4:sia_pos2,TN+F+G4:sia_pos3,K2P+G4:bdnf_pos1,TVMe+I+G4:bdnf_pos2,TIMe+I+G4:bdnf_pos3,TIM2+F+I+G4:nxc_pos1,TIM3+F+I+G4:nxc_pos2,TN+F+G4:nxc_pos3,TPM2+I+G4:cyb_pos1,GTR+F+I+G4:cyb_pos2,TIM2+F+ASC+G4:cyb_pos3,TIM2+F+I+G4:nd4_pos1,GTR+F+I+G4:nd4_pos2,TN+F+ASC+G4:nd4_pos3
+
+List of best-fit models per partition:
+
+  ID  Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+   1  TNe+I+G4           -513.475    1036.949 + 6.95e-310    1037.411 - 6.95e-310    1051.513 - 6.93e-310
+   2  JC+I+G4            -298.050     602.101 + 6.95e-310     602.283 - 6.95e-310     610.839 - 6.93e-310
+   3  TN+F+G4           -3374.592    6763.185 + 6.95e-310    6764.067 - 6.95e-310    6783.522 - 6.93e-310
+   4  K2P+G4            -2890.851    5787.703 + 6.95e-310    5787.845 - 6.95e-310    5797.163 - 6.93e-310
+   5  TVMe+I+G4          -773.829    1561.658 + 6.95e-310    1562.341 - 6.95e-310    1583.691 - 6.93e-310
+   6  TIMe+I+G4          -390.398     792.797 + 6.95e-310     793.306 - 6.95e-310     811.682 - 6.93e-310
+   7  TIM2+F+I+G4       -1010.190    2038.380 + 6.95e-310    2039.409 - 6.95e-310    2067.364 - 6.93e-310
+   8  TIM3+F+I+G4        -800.766    1619.532 + 6.95e-310    1620.560 - 6.95e-310    1648.515 - 6.93e-310
+   9  TN+F+G4           -3325.059    6664.119 + 6.95e-310    6664.751 - 6.95e-310    6686.661 - 6.93e-310
+  10  TPM2+I+G4         -6922.499   13854.998 + 6.95e-310   13855.364 - 6.95e-310   13870.677 - 6.93e-310
+  11  GTR+F+I+G4        -2846.660    5715.321 + 6.95e-310    5716.991 - 6.95e-310    5749.814 - 6.93e-310
+  12  TIM2+F+ASC+G4    -24927.437   49870.874 + 6.95e-310   49871.768 - 6.95e-310   49895.960 - 6.93e-310
+  13  TIM2+F+I+G4       -8498.309   17014.619 + 6.95e-310   17015.803 - 6.95e-310   17042.407 - 6.93e-310
+  14  GTR+F+I+G4        -3457.568    6937.136 + 6.95e-310    6938.896 - 6.95e-310    6971.099 - 6.93e-310
+  15  TN+F+ASC+G4      -23216.255   46446.510 + 6.95e-310   46447.238 - 6.95e-310   46468.123 - 6.93e-310
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model with separate substitution models and separate rates across sites
+
+  ID  Model           Speed  Parameters
+   1  TNe+I+G4       0.0366  TNe{3.25531,27.1191}+FQ+I{0.744173}+G4{0.453984}
+   2  JC+I+G4        0.1243  JC+I{0.847696}+G4{0.0868912}
+   3  TN+F+G4        0.4601  TN{10.8493,6.65099}+F{0.141415,0.368324,0.288066,0.202195}+G4{0.442919}
+   4  K2P+G4         0.2252  K2P{7.06666}+FQ+G4{0.365046}
+   5  TVMe+I+G4      0.0387  TVMe{17.4325,43.808,100,1.98033}+FQ+I{0.863857}+G4{0.864036}
+   6  TIMe+I+G4      0.0349  TIMe{7.20802,30.6138,100}+FQ+I{0.91712}+G4{0.343968}
+   7  TIM2+F+I+G4    0.0589  TIM2{7.14164,1.20377,9.38817}+F{0.303248,0.157256,0.32426,0.215237}+I{0.531199}+G4{0.360866}
+   8  TIM3+F+I+G4    0.1657  TIM3{6.59802,45.1275,8.97578}+F{0.338776,0.162313,0.170042,0.32887}+I{0.818492}+G4{0.239964}
+   9  TN+F+G4        0.1800  TN{5.01354,8.69624}+F{0.294639,0.202087,0.224177,0.279098}+G4{0.853293}
+  10  TPM2+I+G4      0.6909  TPM2{3.27353,20.467}+FQ+I{0.394437}+G4{0.781859}
+  11  GTR+F+I+G4     0.2439  GTR{10.8962,29.8153,11.1137,22.7622,100}+F{0.199845,0.257852,0.146647,0.395655}+I{0.51036}+G4{0.804027}
+  12  TIM2+F+ASC+G4  5.6675  TIM2{0.363944,12.077,4.22968}+F{0.305722,0.381836,0.0454133,0.267029}+ASC+G4{2.64272}
+  13  TIM2+F+I+G4    1.0535  TIM2{3.2131,15.7406,23.118}+F{0.337983,0.221864,0.218378,0.221775}+I{0.212794}+G4{0.775864}
+  14  GTR+F+I+G4     0.3339  GTR{6.46692,10.8175,7.23645,5.76282,21.1742}+F{0.126061,0.30298,0.133666,0.437294}+I{0.26724}+G4{0.494643}
+  15  TN+F+ASC+G4    5.6628  TN{27.3867,10.2347}+F{0.343456,0.323331,0.052034,0.281179}+ASC+G4{2.606}
+
+TREE USED FOR ModelFinder
+-------------------------
+
+Log-likelihood of the tree: -83227.9446 (s.e. 2673.1163)
+Unconstrained log-likelihood (without tree): -9745.5413
+Number of free parameters (#branches + #model parameters): 589
+Akaike information criterion (AIC) score: 167633.8892
+Corrected Akaike information criterion (AICc) score: 168002.6000
+Bayesian information criterion (BIC) score: 171058.3326
+
+Total tree length (sum of branch lengths): 16.2427
+Sum of internal branch lengths: 6.6982 (41.2380% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0004) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'UMMZ219489_Scaphiophryne_marmorata' is drawn at root
+
+                                                              +--ABTC116941_Oreophryne_A_graminis
+                                                       +------|
+                                                       |      +--BPBM33674_Oreophryne_A_notata
+                                                  +----|
+                                                  |    |        +--------BPBM34677_Oreophryne_A_cameroni
+                                                  |    |     +--|
+                                                  |    |     |  +----BPBM22689_Oreophryne_A_cf__cameroni
+                                                  |    |  +--|
+                                                  |    |  |  +---KU321316_Oreophryne_A_nana
+                                                  |    +--|
+                                                  |       +--CMNH1366_Oreophryne_A_anulata
+                                               +--|
+                                               |  |     +------------BPBM22784_Oreophryne_A_parkeri
+                                               |  +-----|
+                                               |        |                     +--BJE1120_Oreophryne_A_senckenbergiana
+                                               |        |                  +--|
+                                               |        |                  |  +**BJE1144_Oreophryne_A_senckenbergiana
+                                               |        |        +---------|
+                                               |        |        |         +**BJE1143_Oreophryne_A_senckenbergiana
+                                               |        +--------|
+                                               |                 +-----BJE1248_Oreophryne_A_frontifasciata
+                                            +--|
+                                            |  +------------------BPBM34688_Oreophryne_A_biroi
+                                         +--|
+                                         |  |  +--------BPBM33763_Oreophryne_A_anamiatoi
+                                         |  +--|
+                                         |     +---------BPBM22789_Oreophryne_A_parkopanorum
+                                      +--|
+                                      |  |                   +--UMMZ242404_Oreophryne_A_sp_8
+                                      |  |            +------|
+                                      |  |            |      +--BPBM16554_Oreophryne_A_philosylleptoris
+                                      |  |         +--|
+                                      |  |         |  |       +--BPBM22511_Oreophryne_A_brachypus
+                                      |  |         |  |    +--|
+                                      |  |         |  |    |  |  +--BPBM18510_Oreophryne_A_cf__geislerorum_1
+                                      |  |         |  |    |  +--|
+                                      |  |         |  |    |     +--BPBM39156_Oreophryne_A_sp_1
+                                      |  |         |  +----|
+                                      |  |         |       +--MB484_Oreophryne_A_cf__geislerorum_2
+                                      |  |      +--|
+                                      |  |      |  +------BPBM16217_Oreophryne_A_inornata
+                                      |  |   +--|
+                                      |  |   |  |              +--BPBM38990_Oreophryne_A_sp_2
+                                      |  |   |  |           +--|
+                                      |  |   |  |           |  +--BPBM38992_Oreophryne_A_sp_2
+                                      |  |   |  |        +--|
+                                      |  |   |  |        |  +--BPBM39244_Oreophryne_A_sp_3
+                                      |  |   |  |     +--|
+                                      |  |   |  |     |  |     +--BPBM40145_Oreophryne_A_sp_6
+                                      |  |   |  |     |  |  +--|
+                                      |  |   |  |     |  |  |  +--BPBM18002_Oreophryne_A_sp_7
+                                      |  |   |  |     |  +--|
+                                      |  |   |  |     |     |     +--BPBM19371_Oreophryne_A_sp_4
+                                      |  |   |  |     |     |  +--|
+                                      |  |   |  |     |     |  |  +--BPBM39366_Oreophryne_A_sp_5
+                                      |  |   |  |     |     +--|
+                                      |  |   |  |     |        +--BPBM18509_Oreophryne_A_lemur
+                                      |  |   |  |  +--|
+                                      |  |   |  |  |  +-------BPBM37753_Paedophryne_dekot
+                                      |  |   |  +--|
+                                      |  |   |     |    +--BPBM22539_Oreophryne_A_loriae
+                                      |  |   |     +----|
+                                      |  |   |          +--MB342_Oreophryne_A_loriae
+                                      |  +---|
+                                      |      +------------BPBM20522_Oreophryne_A_aurora
+                                   +--|
+                                   |  |                       +--BPBM31882_Paedophryne_swiftorum_complex_sp_1
+                                   |  |               +-------|
+                                   |  |               |       +--MB486_Paedophryne_swiftorum_complex_sp_2
+                                   |  |            +--|
+                                   |  |            |  |      +--BPBM47713_Paedophryne_amauensis
+                                   |  |            |  +------|
+                                   |  |            |         +--MB291_Paedophryne_sp_1
+                                   |  |     +------|
+                                   |  |     |      |   +------FK16913_Paedophryne_titan
+                                   |  |     |      +---|
+                                   |  |     |          +--BPBM48036_Paedophryne_sp_2
+                                   |  +-----|
+                                   |        +-------------FK15527_Paedophryne_verrucosa
+                                +--|
+                                |  |                +--------JAM11383_Oreophryne_B_sp_5
+                                |  +----------------|
+                                |                   +--TNHC58922_Oreophryne_B_variabilis
+                             +--|
+                             |  |                     +----BPBM47780_Cophixalus_cf__cryptotympanum
+                             |  |              +------|
+                             |  |              |      +---BPBM33707_Cophixalus_caverniphilus
+                             |  |           +--|
+                             |  |           |  |  +-----------BPBM35843_Cophixalus_cf__pipilans_1
+                             |  |           |  +--|
+                             |  |           |     +------------BPBM22692_Cophixalus_balbus
+                             |  |        +--|
+                             |  |        |  |                       +--UMMZ242263_Cophixalus_variabilis_complex_sp_1
+                             |  |        |  |                 +-----|
+                             |  |        |  |                 |     |  +--BPBM15814_Cophixalus_variabilis_complex_sp_2
+                             |  |        |  |                 |     +--|
+                             |  |        |  |                 |        +--MB571_Cophixalus_variabilis_complex_sp_3
+                             |  |        |  |              +--|
+                             |  |        |  |              |  |     +---BPBM19314_Cophixalus_ateles
+                             |  |        |  |              |  |  +--|
+                             |  |        |  |              |  |  |  +------MB233_Cophixalus_sp_1
+                             |  |        |  |              |  +--|
+                             |  |        |  |              |     +-----------MB302_Cophixalus_sp_2
+                             |  |        |  |           +--|
+                             |  |        |  |           |  |       +--BPBM39048_Cophixalus_sp_3
+                             |  |        |  |           |  +-------|
+                             |  |        |  |           |          +--BPBM18097_Cophixalus_timidus
+                             |  |        |  |        +--|
+                             |  |        |  |        |  |           +--MB482_Cophixalus_linnaeus
+                             |  |        |  |        |  +-----------|
+                             |  |        |  |        |              +--BPBM31337_Cophixalus_linnaeus
+                             |  |        |  |     +--|
+                             |  |        |  |     |  |                                 +--UMMZ242232_Cophixalus_desticans_complex_sp_1
+                             |  |        |  |     |  |                              +--|
+                             |  |        |  |     |  |                              |  +--MB617_Cophixalus_desticans_complex_sp_1
+                             |  |        |  |     |  |        +---------------------|
+                             |  |        |  |     |  |        |                     +--BPBM15708_Cophixalus_desticans_complex_sp_2
+                             |  |        |  |     |  |     +--|
+                             |  |        |  |     |  |     |  |            +**BPBM18430_Cophixalus_albolineatus
+                             |  |        |  |     |  |     |  |         +--|
+                             |  |        |  |     |  |     |  |         |  +--BPBM18429_Cophixalus_albolineatus
+                             |  |        |  |     |  |     |  +---------|
+                             |  |        |  |     |  |     |            +----BPBM31847_Cophixalus_cf__pipilans_2
+                             |  |        |  |     |  |  +--|
+                             |  |        |  |     |  |  |  |     +---BPBM37718_Cophixalus_clapporum
+                             |  |        |  |     |  |  |  +-----|
+                             |  |        |  |     |  |  |        +----BPBM20215_Cophixalus_cupricarenus
+                             |  |        |  |     |  +--|
+                             |  |        |  |     |     +---------BPBM20197_Cophixalus_melanops
+                             |  |        |  |  +--|
+                             |  |        |  |  |  |            +--UMMZ242349_Cophixalus_verrucosus_complex_sp_1
+                             |  |        |  |  |  |        +---|
+                             |  |        |  |  |  |        |   +--MB583_Cophixalus_verrucosus_complex_sp_2
+                             |  |        |  |  |  |     +--|
+                             |  |        |  |  |  |     |  +----BPBM27491_Cophixalus_verrucosus_complex_sp_3
+                             |  |        |  |  |  |  +--|
+                             |  |        |  |  |  |  |  |   +--BPBM19320_Cophixalus_nexipus
+                             |  |        |  |  |  |  |  +---|
+                             |  |        |  |  |  |  |      +--BPBM17959_Cophixalus_sp_4
+                             |  |        |  |  |  +--|
+                             |  |        |  |  |     |     +--BPBM18392_Cophixalus_cheesmanae_complex_sp_1
+                             |  |        |  |  |     +-----|
+                             |  |        |  |  |           +--MB470_Cophixalus_cheesmanae_complex_sp_2
+                             |  |        |  +--|
+                             |  |        |     |   +---------BPBM26182_Cophixalus_tomaiodactylus
+                             |  |        |     +---|
+                             |  |        |         +-------BPBM26194_Cophixalus_phaeobalius
+                             |  |     +--|
+                             |  |     |  +---------------BPBM47804_Cophixalus_darlingtoni
+                             |  |  +--|
+                             |  |  |  |            +--BPBM38939_Copiula_sp_7
+                             |  |  |  |         +--|
+                             |  |  |  |         |  +----BPBM19277_Cophixalus_iovaorum
+                             |  |  |  +---------|
+                             |  |  |            +-----------BPBM15707_Cophixalus_sp_5
+                             |  +**|
+                             |     |                          +--UMMZ242398_Oreophryne_B_penelopia
+                             |     |                     +----|
+                             |     |                     |    +--MB627_Oreophryne_B_penelopia
+                             |     |                  +--|
+                             |     |                  |  +--BPBM16546_Oreophryne_B_insulana
+                             |     |               +--|
+                             |     |               |  |  +--BPBM39510_Oreophryne_B_phoebe
+                             |     |               |  +--|
+                             |     |               |     |  +--BPBM15775_Oreophryne_B_equus
+                             |     |               |     +--|
+                             |     |               |        +--BPBM18128_Oreophryne_B_picticrus
+                             |     |            +--|
+                             |     |            |  |          +--BPBM20501_Oreophryne_B_meliades
+                             |     |            |  |  +-------|
+                             |     |            |  |  |       +--BPBM20440_Oreophryne_B_meliades
+                             |     |            |  +--|
+                             |     |            |     +--------BPBM20469_Oreophryne_B_ezra
+                             |     |        +---|
+                             |     |        |   |     +--BPBM39000_Oreophryne_B_sp_1
+                             |     |        |   |  +--|
+                             |     |        |   |  |  +--BPBM40143_Oreophryne_B_brunnea
+                             |     |        |   +--|
+                             |     |        |      +---BPBM17980_Oreophryne_B_matawan
+                             |     |     +--|
+                             |     |     |  |   +-----BPBM20571_Oreophryne_B_sp_2
+                             |     |     |  +---|
+                             |     |     |      |     +--BPBM20572_Oreophryne_B_sp_3
+                             |     |     |      +-----|
+                             |     |     |            |  +--BPBM20538_Oreophryne_B_sp_3
+                             |     |     |            +--|
+                             |     |     |               +--BPBM20532_Oreophryne_B_sp_3
+                             |     |  +--|
+                             |     |  |  +------BPBM39357_Oreophryne_B_sp_6
+                             |     +--|
+                             |        |        +--BPBM38988_Oreophryne_B_sp_4
+                             |        |  +-----|
+                             |        |  |     +--BPBM39344_Oreophryne_B_sp_4
+                             |        +--|
+                             |           |                 +**BPBM41683_Aphantophryne_B_pansa_3
+                             |           |              +--|
+                             |           |              |  +--BPBM41685_Aphantophryne_B_pansa_3
+                             |           |           +--|
+                             |           |           |  +--BPBM41681_Aphantophryne_B_pansa_3
+                             |           |        +--|
+                             |           |        |  +--BPBM41682_Aphantophryne_B_pansa_3
+                             |           |     +--|
+                             |           |     |  |  +--BPBM43952_Aphantophryne_pansa
+                             |           |     |  +--|
+                             |           |     |     +--BPBM43954_Aphantophryne_pansa
+                             |           +-----|
+                             |                 |     +--BPBM44363_Aphantophryne_sabini
+                             |                 |  +--|
+                             |                 |  |  +--BPBM44373_Aphantophryne_sabini
+                             |                 +--|
+                             |                    +--BPBM44369_Aphantophryne_sabini
+                          +--|
+                          |  |                 +--BPBM47733_Choerophryne_darlingtoni_complex_sp_1
+                          |  |           +-----|
+                          |  |           |     +--BPBM33664_Choerophryne_darlingtoni_complex_sp_2
+                          |  |       +---|
+                          |  |       |   |  +--------BPBM22649_Choerophryne_brunhildae
+                          |  |       |   +--|
+                          |  |       |      +-----BPBM33637_Choerophryne_murrita
+                          |  |  +----|
+                          |  |  |    |          +--BPBM22675_Choerophryne_longirostris
+                          |  |  |    |     +----|
+                          |  |  |    |     |    +--BPBM34679_Choerophryne_proboscidea
+                          |  |  |    +-----|
+                          |  |  |          +------------------BPBM22685_Choerophryne_rostellifer
+                          |  +--|
+                          |     |             +--BPBM35561_Choerophryne_gudrunae
+                          |     |          +--|
+                          |     |          |  |  +--MB466_Choerophryne_sp_1
+                          |     |          |  +--|
+                          |     |          |     +--BPBM31808_Choerophryne_sp_1
+                          |     |  +-------|
+                          |     |  |       +--BPBM18317_Choerophryne_exclamitans
+                          |     +--|
+                          |        |     +--------BPBM39991_Choerophryne_bryonopsis
+                          |        |  +--|
+                          |        |  |  |         +--BPBM18351_Choerophryne_gunnari
+                          |        |  |  |  +------|
+                          |        |  |  |  |      +--MB300_Choerophryne_gunnari
+                          |        |  |  +--|
+                          |        |  |     |     +-----BPBM17847_Choerophryne_sanguinopictus
+                          |        |  |     |  +--|
+                          |        |  |     |  |  +---MB463_Choerophryne_sp_2
+                          |        |  |     +--|
+                          |        |  |        +------BPBM25837_Choerophryne_sp_3
+                          |        +--|
+                          |           |          +--MB472_Choerophryne_sp_4
+                          |           |       +--|
+                          |           |       |  +**BPBM35367_Choerophryne_sp_4
+                          |           +-------|
+                          |                   +--BPBM25754_Choerophryne_sp_4
+                       +--|
+                       |  |                                   +-----BPBM47792_Hylophorbus_cf__rufescens_14
+                       |  |                                +--|
+                       |  |                                |  +--------BPBM33749_Hylophorbus_richardsi
+                       |  |                             +--|
+                       |  |                             |  |  +---BPBM47888_Hylophorbus_cf__rufescens_13
+                       |  |                             |  +--|
+                       |  |                             |     |     +--BPBM22504_Hylophorbus_cf__rufescens_12
+                       |  |                             |     |  +--|
+                       |  |                             |     |  |  +--BPBM18441_Hylophorbus_cf__rufescens_12
+                       |  |                             |     +--|
+                       |  |                             |        +--MB294_Hylophorbus_cf__rufescens_12
+                       |  |                          +--|
+                       |  |                          |  |   +--BPBM35866_Hylophorbus_cf__rufescens_15
+                       |  |                          |  +---|
+                       |  |                          |      +---BPBM22740_Hylophorbus_cf__rufescens_16
+                       |  |                       +--|
+                       |  |                       |  +---------BPBM35692_Hylophorbus_cf__proekes
+                       |  |                    +--|
+                       |  |                    |  +--------BPBM34724_Hylophorbus_atrifasciatus
+                       |  |                 +--|
+                       |  |                 |  |                    +--UMMZ242317_Hylophorbus_cf__rufescens_1
+                       |  |                 |  |                 +--|
+                       |  |                 |  |                 |  +--MB556_Hylophorbus_cf__rufescens_1
+                       |  |                 |  |              +--|
+                       |  |                 |  |              |  +--BPBM16181_Hylophorbus_cf__rufescens_2
+                       |  |                 |  |           +--|
+                       |  |                 |  |           |  |  +--BPBM37232_Hylophorbus_cf__rufescens_3
+                       |  |                 |  |           |  +--|
+                       |  |                 |  |           |     +--BPBM15355_Hylophorbus_cf__rufescens_4
+                       |  |                 |  |        +--|
+                       |  |                 |  |        |  |  +--BPBM18450_Hylophorbus_cf__rufescens_6
+                       |  |                 |  |        |  +--|
+                       |  |                 |  |        |     |  +--MB483_Hylophorbus_cf__rufescens_5
+                       |  |                 |  |        |     +--|
+                       |  |                 |  |        |        +**BPBM31979_Hylophorbus_cf__rufescens_5
+                       |  |                 |  |     +--|
+                       |  |                 |  |     |  |     +--BPBM39569_Hylophorbus_cf__rufescens_9
+                       |  |                 |  |     |  |  +--|
+                       |  |                 |  |     |  |  |  |  +--BPBM39631_Hylophorbus_cf__rufescens_7
+                       |  |                 |  |     |  |  |  +--|
+                       |  |                 |  |     |  |  |     +--BPBM18033_Hylophorbus_cf__rufescens_8
+                       |  |                 |  |     |  +--|
+                       |  |                 |  |     |     +--BPBM19338_Hylophorbus_cf__rufescens_10
+                       |  |                 |  |  +--|
+                       |  |                 |  |  |  |  +---BPBM17048_Hylophorbus_cf__rufescens_11
+                       |  |                 |  |  |  +--|
+                       |  |                 |  |  |     |   +--BPBM20369_Hylophorbus_extimus
+                       |  |                 |  |  |     +---|
+                       |  |                 |  |  |         +---BPBM22761_Hylophorbus_proekes
+                       |  |                 |  +--|
+                       |  |                 |     +---BPBM39638_Hylophorbus_myopicus
+                       |  |              +--|
+                       |  |              |  |                 +--UMMZ242361_Mantophryne_cf__lateralis_1
+                       |  |              |  |              +--|
+                       |  |              |  |              |  |  +--BPBM20396_Mantophryne_cf__lateralis_1
+                       |  |              |  |              |  +--|
+                       |  |              |  |              |     +**MB518_Mantophryne_cf__lateralis_1
+                       |  |              |  |           +--|
+                       |  |              |  |           |  +--BPBM15410_Mantophryne_cf__lateralis_2
+                       |  |              |  |        +--|
+                       |  |              |  |        |  |  +--BPBM22780_Mantophryne_cf__lateralis_3
+                       |  |              |  |        |  +--|
+                       |  |              |  |        |     |     +--BPBM19265_Mantophryne_cf__lateralis_4
+                       |  |              |  |        |     |  +--|
+                       |  |              |  |        |     |  |  +--MB331_Mantophryne_cf__lateralis_4
+                       |  |              |  |        |     +--|
+                       |  |              |  |        |        +--MB479_Mantophryne_cf__lateralis_5
+                       |  |              |  |     +--|
+                       |  |              |  |     |  +------BPBM40135_Mantophryne_insignis
+                       |  |              |  |  +--|
+                       |  |              |  |  |  +--------BPBM31477_Mantophryne_menziesi
+                       |  |              |  +--|
+                       |  |              |     |     +---BPBM20142_Mantophryne_louisiadensis
+                       |  |              |     +-----|
+                       |  |              |           +--BPBM20397_Mantophryne_axanthogaster
+                       |  |           +--|
+                       |  |           |  |     +-----BPBM47786_Callulops_sp_2
+                       |  |           |  |  +--|
+                       |  |           |  |  |  |                 +--UMMZ242226_Callulops_doriae_complex_sp_1
+                       |  |           |  |  |  |              +--|
+                       |  |           |  |  |  |              |  +--MB508_Callulops_doriae_complex_sp_1
+                       |  |           |  |  |  |           +--|
+                       |  |           |  |  |  |           |  +--BPBM20141_Callulops_doriae_complex_sp_2
+                       |  |           |  |  |  |        +--|
+                       |  |           |  |  |  |        |  +---BPBM37122_Callulops_sp_1
+                       |  |           |  |  |  |     +--|
+                       |  |           |  |  |  |     |  +--BPBM19236_Callulops_bicolor
+                       |  |           |  |  |  |  +--|
+                       |  |           |  |  |  |  |  +----BPBM16806_Callulops_robustus
+                       |  |           |  |  |  +--|
+                       |  |           |  |  |     |       +--BPBM18504_Callulops_personatus
+                       |  |           |  |  |     |   +---|
+                       |  |           |  |  |     |   |   +--BPBM23740_Callulops_personatus
+                       |  |           |  |  |     +---|
+                       |  |           |  |  |         |  +---BPBM13155_Callulops_eremnosphax
+                       |  |           |  |  |         +--|
+                       |  |           |  |  |            +--BPBM35836_Callulops_microtis
+                       |  |           |  +--|
+                       |  |           |     +------BPBM33669_Callulops_wilhelmanus
+                       |  |        +--|
+                       |  |        |  |                +-------BPBM13110_Asterophrys_slateri
+                       |  |        |  |             +--|
+                       |  |        |  |             |  +---BPBM28153_Asterophrys_leucopus
+                       |  |        |  |         +---|
+                       |  |        |  |         |   +-------BPBM28204_Asterophrys_turpicola
+                       |  |        |  |      +--|
+                       |  |        |  |      |  |            +---------ZMB74609_Asterophrys_senglaubi
+                       |  |        |  |      |  |        +---|
+                       |  |        |  |      |  |        |   +--ZMB63882_Asterophrys_marani
+                       |  |        |  |      |  |     +--|
+                       |  |        |  |      |  |     |  +-------AA24862_Asterophrys_sp
+                       |  |        |  |      |  +-----|
+                       |  |        |  |      |        |  +--ZMB70187_Asterophrys_cf__marani
+                       |  |        |  |      |        +--|
+                       |  |        |  |      |           +--ZMB70185_Asterophrys_cf__marani
+                       |  |        |  |  +---|
+                       |  |        |  |  |   +--------ZMB70535_Asterophrys_eurydactylus
+                       |  |        |  +--|
+                       |  |        |     |  +---------BPBM33780_Xenorhina_parkerorum
+                       |  |        |     +--|
+                       |  |        |        |                +------BPBM22797_Xenorhina_arboricola
+                       |  |        |        |             +--|
+                       |  |        |        |             |  +--BPBM34697_Xenorhina_oxycephala
+                       |  |        |        |      +------|
+                       |  |        |        |      |      +----------BPBM21474_Xenorhina_adisca
+                       |  |        |        |  +---|
+                       |  |        |        |  |   |         +--BPBM28179_Xenorhina_mehelyi
+                       |  |        |        |  |   |      +--|
+                       |  |        |        |  |   |      |  +------MB327_Xenorhina_sp_1
+                       |  |        |        |  |   +------|
+                       |  |        |        |  |          +--------BPBM22795_Xenorhina_tumulus
+                       |  |        |        +--|
+                       |  |        |           |  +--------------BPBM14060_Xenorhina_ocellata
+                       |  |        |           +--|
+                       |  |        |              +-------BPBM34741_Xenorhina_obesa
+                       |  |     +--|
+                       |  |     |  |                     +--UMMZ242338_Liophryne_aff__dentata_1
+                       |  |     |  |             +-------|
+                       |  |     |  |             |       +--BPBM15373_Liophryne_aff__dentata_2
+                       |  |     |  |         +---|
+                       |  |     |  |         |   +--MB593_Liophryne_aff__dentata_3
+                       |  |     |  |  +------|
+                       |  |     |  |  |      |     +--UMMZ242309_Genyophryne_aff__thomsoni_1
+                       |  |     |  |  |      |  +--|
+                       |  |     |  |  |      |  |  +--MB626_Genyophryne_aff__thomsoni_2
+                       |  |     |  |  |      +--|
+                       |  |     |  |  |         |  +--BPBM20357_Genyophryne_thomsoni
+                       |  |     |  |  |         +--|
+                       |  |     |  |  |            +---------BPBM31853_Genyophryne_aff__thomsoni_3
+                       |  |     |  +--|
+                       |  |     |     |        +----------BPBM39929_Liophryne_miniafia
+                       |  |     |     |     +--|
+                       |  |     |     |     |  |  +---BPBM17890_Oxydactyla_crassa
+                       |  |     |     |     |  +--|
+                       |  |     |     |     |     +-----BPBM19360_Liophryne_magnitympanum
+                       |  |     |     |  +--|
+                       |  |     |     |  |  |  +----------BPBM22754_Liophryne_schlaginhaufeni
+                       |  |     |     |  |  +**|
+                       |  |     |     |  |     +------------BPBM18315_Liophryne_allisoni
+                       |  |     |     +--|
+                       |  |     |        +-----------BPBM22793_Sphenophryne_cornuta
+                       |  |  +--|
+                       |  |  |  |            +---BPBM38914_Barygenys_maculata
+                       |  |  |  |         +--|
+                       |  |  |  |         |  +------BPBM25756_Barygenys_atra
+                       |  |  |  |      +--|
+                       |  |  |  |      |  +--BPBM15259_Barygenys_resima
+                       |  |  |  |   +--|
+                       |  |  |  |   |  |         +-----------BPBM38904_Barygenys_apodasta
+                       |  |  |  |   |  +---------|
+                       |  |  |  |   |            |  +------BPBM20126_Barygenys_aff__exsul_1
+                       |  |  |  |   |            +--|
+                       |  |  |  |   |               +-----BPBM20128_Barygenys_exsul
+                       |  |  |  +---|
+                       |  |  |      +------BPBM35986_Hylophorbus_cf__rufescens_17
+                       |  +--|
+                       |     |                  +--BPBM40083_Copiula_sp_1
+                       |     |               +--|
+                       |     |               |  +----BPBM20262_Copiula_sp_2
+                       |     |            +--|
+                       |     |            |  |           +--BPBM39007_Copiula_sp_3
+                       |     |            |  |        +--|
+                       |     |            |  |        |  +--BPBM17084_Copiula_oxyrhina
+                       |     |            |  |     +--|
+                       |     |            |  |     |  +-----BPBM15665_Copiula_minor
+                       |     |            |  |  +--|
+                       |     |            |  |  |  +---BPBM17827_Copiula_sp_4
+                       |     |            |  +--|
+                       |     |            |     |  +-----BPBM18605_Copiula_fistulans
+                       |     |            |     +--|
+                       |     |            |        +-----BPBM20287_Copiula_sp_6
+                       |     |        +---|
+                       |     |        |   +-----------MB309_Copiula_sp_5
+                       |     |     +--|
+                       |     |     |  |           +--BPBM35735_Austrochaperina_B_sp_3
+                       |     |     |  |       +---|
+                       |     |     |  |       |   +-----------BPBM22668_Austrochaperina_B_septentrionalis
+                       |     |     |  |   +---|
+                       |     |     |  |   |   +--BPBM22656_Austrochaperina_B_blumi
+                       |     |     |  +---|
+                       |     |     |      +----------BPBM22665_Austrochaperina_B_basipalmata
+                       |     |  +--|
+                       |     |  |  |                 +--BPBM22664_Austrochaperina_A_sp_1
+                       |     |  |  |  +--------------|
+                       |     |  |  |  |              +--BPBM22481_Austrochaperina_A_novaebritanniae
+                       |     |  |  +--|
+                       |     |  |     |              +--BPBM40000_Austrochaperina_A_sp_2
+                       |     |  |     |  +-----------|
+                       |     |  |     |  |           +--BPBM18388_Austrochaperina_A_parkeri
+                       |     |  |     +--|
+                       |     |  |        +------------BPBM20112_Austrochaperina_A_yelaensis
+                       |     +--|
+                       |        |         +-----BPBM13862_Austrochaperina_B_macrorhyncha
+                       |        |  +------|
+                       |        |  |      +--BPBM22708_Copiula_tyleri
+                       |        +--|
+                       |           +---------BPBM25760_Barygenys_sp
+      +----------------|
+      |                |             +--UMMZ242212_Austrochaperina_C_aff__palmipes_1
+      |                |          +--|
+      |                |          |  +--MB539_Austrochaperina_C_aff__palmipes_2
+      |                |    +-----|
+      |                |    |     |  +--BPBM15234_Austrochaperina_C_aff__palmipes_3
+      |                |    |     +--|
+      |                |    |        +--BPBM15232_Austrochaperina_C_aff__palmipes_3
+      |                +----|
+      |                     +-----MB475_Austrochaperina_C_aff__palmipes_4
++-----|
+|     +--------------------UMMZ211174_Dyscophis_antongilli
+|
++------------------------UMMZ211181_Platypelis_grandis
+|
++-------------UMMZ219489_Scaphiophryne_marmorata
+
+Tree in newick format:
+
+((((((((((((((ABTC116941_Oreophryne_A_graminis:0.0086833730,BPBM33674_Oreophryne_A_notata:0.0310669551):0.0648560403,(((BPBM34677_Oreophryne_A_cameroni:0.0836199970,BPBM22689_Oreophryne_A_cf__cameroni:0.0443913494):0.0191095496,KU321316_Oreophryne_A_nana:0.0358265994):0.0076540225,CMNH1366_Oreophryne_A_anulata:0.0270242720):0.0259713616):0.0451802391,(BPBM22784_Oreophryne_A_parkeri:0.1171059417,(((BJE1120_Oreophryne_A_senckenbergiana:0.0004544023,BJE1144_Oreophryne_A_senckenbergiana:0.0000027940):0.0004533164,BJE1143_Oreophryne_A_senckenbergiana:0.0000027940):0.0885390573,BJE1248_Oreophryne_A_frontifasciata:0.0566960506):0.0836641694):0.0565400414):0.0089621873,BPBM34688_Oreophryne_A_biroi:0.1760720512):0.0077844665,(BPBM33763_Oreophryne_A_anamiatoi:0.0864482262,BPBM22789_Oreophryne_A_parkopanorum:0.0908071746):0.0342597238):0.0020161918,(((((UMMZ242404_Oreophryne_A_sp_8:0.0102866425,BPBM16554_Oreophryne_A_philosylleptoris:0.0330229989):0.0641883558,((BPBM22511_Oreophryne_A_brachypus:0.0138766686,(BPBM18510_Oreophryne_A_cf__geislerorum_1:0.0114689263,BPBM39156_Oreophryne_A_sp_1:0.0102803609):0.0018894018):0.0097736265,MB484_Oreophryne_A_cf__geislerorum_2:0.0264725921):0.0465526162):0.0215430467,BPBM16217_Oreophryne_A_inornata:0.0680333898):0.0160170654,(((((BPBM38990_Oreophryne_A_sp_2:0.0012690390,BPBM38992_Oreophryne_A_sp_2:0.0004174512):0.0173106997,BPBM39244_Oreophryne_A_sp_3:0.0022410563):0.0084101805,((BPBM40145_Oreophryne_A_sp_6:0.0235368542,BPBM18002_Oreophryne_A_sp_7:0.0185578808):0.0097449953,((BPBM19371_Oreophryne_A_sp_4:0.0140979640,BPBM39366_Oreophryne_A_sp_5:0.0037672013):0.0084362146,BPBM18509_Oreophryne_A_lemur:0.0239877767):0.0075076522):0.0020490413):0.0175852540,BPBM37753_Paedophryne_dekot:0.0793932954):0.0185928013,(BPBM22539_Oreophryne_A_loriae:0.0011705661,MB342_Oreophryne_A_loriae:0.0029977874):0.0518225559):0.0205299230):0.0209532554,BPBM20522_Oreophryne_A_aurora:0.1185320148):0.0413128862):0.0207622763,((((BPBM31882_Paedophryne_swiftorum_complex_sp_1:0.0176756785,MB486_Paedophryne_swiftorum_complex_sp_2:0.0133107648):0.0711362119,(BPBM47713_Paedophryne_amauensis:0.0033568196,MB291_Paedophryne_sp_1:0.0093729359):0.0632028414):0.0297263772,(FK16913_Paedophryne_titan:0.0659523454,BPBM48036_Paedophryne_sp_2:0.0220811290):0.0407731210):0.0658112146,FK15527_Paedophryne_verrucosa:0.1286883641):0.0561159645):0.0041127518,(JAM11383_Oreophryne_B_sp_5:0.0853927257,TNHC58922_Oreophryne_B_variabilis:0.0273323183):0.1584032264):0.0072866112,((((((BPBM47780_Cophixalus_cf__cryptotympanum:0.0507739585,BPBM33707_Cophixalus_caverniphilus:0.0439726414):0.0662243691,(BPBM35843_Cophixalus_cf__pipilans_1:0.1144038472,BPBM22692_Cophixalus_balbus:0.1159582853):0.0327923430):0.0235306362,(((((((UMMZ242263_Cophixalus_variabilis_complex_sp_1:0.0113614496,(BPBM15814_Cophixalus_variabilis_complex_sp_2:0.0300293851,MB571_Cophixalus_variabilis_complex_sp_3:0.0099971368):0.0110967961):0.0541024294,((BPBM19314_Cophixalus_ateles:0.0411375809,MB233_Cophixalus_sp_1:0.0622341149):0.0263674315,MB302_Cophixalus_sp_2:0.1108959427):0.0066677321):0.0100703486,(BPBM39048_Cophixalus_sp_3:0.0211773350,BPBM18097_Cophixalus_timidus:0.0109504196):0.0724190067):0.0163898939,(MB482_Cophixalus_linnaeus:0.0023003976,BPBM31337_Cophixalus_linnaeus:0.0018330375):0.1119635737):0.0314321644,(((((UMMZ242232_Cophixalus_desticans_complex_sp_1:0.0007161899,MB617_Cophixalus_desticans_complex_sp_1:0.0035095910):0.0120961054,BPBM15708_Cophixalus_desticans_complex_sp_2:0.0247198404):0.1976383708,((BPBM18430_Cophixalus_albolineatus:0.0000028647,BPBM18429_Cophixalus_albolineatus:0.0034915036):0.0300652110,BPBM31847_Cophixalus_cf__pipilans_2:0.0476282072):0.0937540621):0.0112218471,(BPBM37718_Cophixalus_clapporum:0.0418792916,BPBM20215_Cophixalus_cupricarenus:0.0442998921):0.0547747619):0.0059399275,BPBM20197_Cophixalus_melanops:0.0888396058):0.0170268244):0.0098255383,((((UMMZ242349_Cophixalus_verrucosus_complex_sp_1:0.0043391703,MB583_Cophixalus_verrucosus_complex_sp_2:0.0092113585):0.0429907193,BPBM27491_Cophixalus_verrucosus_complex_sp_3:0.0455535340):0.0177988477,(BPBM19320_Cophixalus_nexipus:0.0297719464,BPBM17959_Cophixalus_sp_4:0.0183303461):0.0436572764):0.0183401627,(BPBM18392_Cophixalus_cheesmanae_complex_sp_1:0.0048056840,MB470_Cophixalus_cheesmanae_complex_sp_2:0.0258344580):0.0570918804):0.0296589110):0.0114636077,(BPBM26182_Cophixalus_tomaiodactylus:0.0957710734,BPBM26194_Cophixalus_phaeobalius:0.0791797936):0.0379594857):0.0032569596):0.0024715812,BPBM47804_Cophixalus_darlingtoni:0.1487208496):0.0049435780,((BPBM38939_Copiula_sp_7:0.0268479275,BPBM19277_Cophixalus_iovaorum:0.0511085360):0.0132873034,BPBM15707_Cophixalus_sp_5:0.1095904980):0.0966517354):0.0079276138,((((((((UMMZ242398_Oreophryne_B_penelopia:0.0009895467,MB627_Oreophryne_B_penelopia:0.0118443784):0.0526393329,BPBM16546_Oreophryne_B_insulana:0.0267529692):0.0203297809,(BPBM39510_Oreophryne_B_phoebe:0.0275200996,(BPBM15775_Oreophryne_B_equus:0.0226305873,BPBM18128_Oreophryne_B_picticrus:0.0220128867):0.0053049176):0.0232299029):0.0095345726,((BPBM20501_Oreophryne_B_meliades:0.0007461286,BPBM20440_Oreophryne_B_meliades:0.0010431568):0.0772233800,BPBM20469_Oreophryne_B_ezra:0.0871426030):0.0046283615):0.0061083411,((BPBM39000_Oreophryne_B_sp_1:0.0128031734,BPBM40143_Oreophryne_B_brunnea:0.0122126154):0.0174591153,BPBM17980_Oreophryne_B_matawan:0.0402499062):0.0251210982):0.0366042384,(BPBM20571_Oreophryne_B_sp_2:0.0543653346,(BPBM20572_Oreophryne_B_sp_3:0.0041590089,(BPBM20538_Oreophryne_B_sp_3:0.0029492477,BPBM20532_Oreophryne_B_sp_3:0.0032432353):0.0019154655):0.0553527001):0.0361870461):0.0285689630,BPBM39357_Oreophryne_B_sp_6:0.0650821709):0.0037548987,((BPBM38988_Oreophryne_B_sp_4:0.0113813526,BPBM39344_Oreophryne_B_sp_4:0.0026661124):0.0568122375,(((((BPBM41683_Aphantophryne_B_pansa_3:0.0002363184,BPBM41685_Aphantophryne_B_pansa_3:0.0049486800):0.0023375781,BPBM41681_Aphantophryne_B_pansa_3:0.0004987324):0.0018122565,BPBM41682_Aphantophryne_B_pansa_3:0.0011996695):0.0038592840,(BPBM43952_Aphantophryne_pansa:0.0022635039,BPBM43954_Aphantophryne_pansa:0.0014753882):0.0054373409):0.0133845296,((BPBM44363_Aphantophryne_sabini:0.0004587932,BPBM44373_Aphantophryne_sabini:0.0004567811):0.0017805712,BPBM44369_Aphantophryne_sabini:0.0005547349):0.0070865947):0.0553675606):0.0320527807):0.0090584203):0.0002679394):0.0030216087,((((BPBM47733_Choerophryne_darlingtoni_complex_sp_1:0.0201051000,BPBM33664_Choerophryne_darlingtoni_complex_sp_2:0.0106966576):0.0577643081,(BPBM22649_Choerophryne_brunhildae:0.0869264145,BPBM33637_Choerophryne_murrita:0.0604938900):0.0141801982):0.0361867695,((BPBM22675_Choerophryne_longirostris:0.0236657997,BPBM34679_Choerophryne_proboscidea:0.0290777657):0.0457069708,BPBM22685_Choerophryne_rostellifer:0.1713223258):0.0597708937):0.0485312402,(((BPBM35561_Choerophryne_gudrunae:0.0268611622,(MB466_Choerophryne_sp_1:0.0014767452,BPBM31808_Choerophryne_sp_1:0.0009369406):0.0095245821):0.0105068331,BPBM18317_Choerophryne_exclamitans:0.0161641215):0.0757267267,((BPBM39991_Choerophryne_bryonopsis:0.0877494520,((BPBM18351_Choerophryne_gunnari:0.0011740278,MB300_Choerophryne_gunnari:0.0014398585):0.0634026445,((BPBM17847_Choerophryne_sanguinopictus:0.0536330835,MB463_Choerophryne_sp_2:0.0407789518):0.0347617663,BPBM25837_Choerophryne_sp_3:0.0633948950):0.0102666875):0.0117205752):0.0065348235,((MB472_Choerophryne_sp_4:0.0047075184,BPBM35367_Choerophryne_sp_4:0.0000027940):0.0019596093,BPBM25754_Choerophryne_sp_4:0.0007296608):0.0731902570):0.0248979776):0.0253046130):0.0182047099):0.0033229332,((((((((((((BPBM47792_Hylophorbus_cf__rufescens_14:0.0602482534,BPBM33749_Hylophorbus_richardsi:0.0851919523):0.0078122402,(BPBM47888_Hylophorbus_cf__rufescens_13:0.0398506464,((BPBM22504_Hylophorbus_cf__rufescens_12:0.0004085062,BPBM18441_Hylophorbus_cf__rufescens_12:0.0017434742):0.0007637731,MB294_Hylophorbus_cf__rufescens_12:0.0022987459):0.0147710289):0.0318687210):0.0106372705,(BPBM35866_Hylophorbus_cf__rufescens_15:0.0346133350,BPBM22740_Hylophorbus_cf__rufescens_16:0.0359189388):0.0360262864):0.0068231294,BPBM35692_Hylophorbus_cf__proekes:0.0915933991):0.0039382108,BPBM34724_Hylophorbus_atrifasciatus:0.0807406921):0.0048395628,(((((((UMMZ242317_Hylophorbus_cf__rufescens_1:0.0013668417,MB556_Hylophorbus_cf__rufescens_1:0.0017556649):0.0181110530,BPBM16181_Hylophorbus_cf__rufescens_2:0.0173378376):0.0111428665,(BPBM37232_Hylophorbus_cf__rufescens_3:0.0341110635,BPBM15355_Hylophorbus_cf__rufescens_4:0.0172703661):0.0041219511):0.0032747921,(BPBM18450_Hylophorbus_cf__rufescens_6:0.0147266432,(MB483_Hylophorbus_cf__rufescens_5:0.0009642503,BPBM31979_Hylophorbus_cf__rufescens_5:0.0000027940):0.0143085889):0.0153727264):0.0063826768,((BPBM39569_Hylophorbus_cf__rufescens_9:0.0182520424,(BPBM39631_Hylophorbus_cf__rufescens_7:0.0186929250,BPBM18033_Hylophorbus_cf__rufescens_8:0.0192751411):0.0031280806):0.0100628964,BPBM19338_Hylophorbus_cf__rufescens_10:0.0218958859):0.0079765401):0.0165629695,(BPBM17048_Hylophorbus_cf__rufescens_11:0.0409181933,(BPBM20369_Hylophorbus_extimus:0.0178301512,BPBM22761_Hylophorbus_proekes:0.0372378879):0.0405501821):0.0138096844):0.0159125654,BPBM39638_Hylophorbus_myopicus:0.0395336292):0.0214297215):0.0156509766,((((((UMMZ242361_Mantophryne_cf__lateralis_1:0.0009667361,(BPBM20396_Mantophryne_cf__lateralis_1:0.0008592373,MB518_Mantophryne_cf__lateralis_1:0.0000027940):0.0011799859):0.0078323546,BPBM15410_Mantophryne_cf__lateralis_2:0.0208417912):0.0308620473,(BPBM22780_Mantophryne_cf__lateralis_3:0.0167785170,((BPBM19265_Mantophryne_cf__lateralis_4:0.0030795525,MB331_Mantophryne_cf__lateralis_4:0.0022312952):0.0285978612,MB479_Mantophryne_cf__lateralis_5:0.0150009595):0.0056690388):0.0251861232):0.0072611301,BPBM40135_Mantophryne_insignis:0.0696242201):0.0132658839,BPBM31477_Mantophryne_menziesi:0.0819656937):0.0224235638,(BPBM20142_Mantophryne_louisiadensis:0.0378572673,BPBM20397_Mantophryne_axanthogaster:0.0306322143):0.0578175370):0.0101966457):0.0106760333,((BPBM47786_Callulops_sp_2:0.0576388997,((((((UMMZ242226_Callulops_doriae_complex_sp_1:0.0047270304,MB508_Callulops_doriae_complex_sp_1:0.0004620902):0.0037652991,BPBM20141_Callulops_doriae_complex_sp_2:0.0043345043):0.0251744282,BPBM37122_Callulops_sp_1:0.0369745878):0.0096048815,BPBM19236_Callulops_bicolor:0.0262498704):0.0043214171,BPBM16806_Callulops_robustus:0.0479988951):0.0310186526,((BPBM18504_Callulops_personatus:0.0010109609,BPBM23740_Callulops_personatus:0.0058912105):0.0358612196,(BPBM13155_Callulops_eremnosphax:0.0407125413,BPBM35836_Callulops_microtis:0.0342512508):0.0129367125):0.0405218457):0.0042158025):0.0045462756,BPBM33669_Callulops_wilhelmanus:0.0631268160):0.0230571938):0.0077421769,(((((BPBM13110_Asterophrys_slateri:0.0735380361,BPBM28153_Asterophrys_leucopus:0.0435349367):0.0320503590,BPBM28204_Asterophrys_turpicola:0.0779409353):0.0372731757,(((ZMB74609_Asterophrys_senglaubi:0.0917886453,ZMB63882_Asterophrys_marani:0.0038578982):0.0370437190,AA24862_Asterophrys_sp:0.0752944827):0.0163605968,(ZMB70187_Asterophrys_cf__marani:0.0023731438,ZMB70185_Asterophrys_cf__marani:0.0045674598):0.0300219099):0.0600063239):0.0222596761,ZMB70535_Asterophrys_eurydactylus:0.0846733704):0.0414564488,(BPBM33780_Xenorhina_parkerorum:0.0939082056,((((BPBM22797_Xenorhina_arboricola:0.0639867446,BPBM34697_Xenorhina_oxycephala:0.0319843788):0.0185687944,BPBM21474_Xenorhina_adisca:0.1055613419):0.0688215520,((BPBM28179_Xenorhina_mehelyi:0.0280705584,MB327_Xenorhina_sp_1:0.0619770135):0.0309254205,BPBM22795_Xenorhina_tumulus:0.0841004874):0.0693623871):0.0354671889,(BPBM14060_Xenorhina_ocellata:0.1348396604,BPBM34741_Xenorhina_obesa:0.0734924156):0.0263935818):0.0131895528):0.0147597698):0.0219982922):0.0095270272,((((UMMZ242338_Liophryne_aff__dentata_1:0.0043004778,BPBM15373_Liophryne_aff__dentata_2:0.0262152852):0.0730730011,MB593_Liophryne_aff__dentata_3:0.0039297358):0.0392544223,((UMMZ242309_Genyophryne_aff__thomsoni_1:0.0058048399,MB626_Genyophryne_aff__thomsoni_2:0.0164282505):0.0209832515,(BPBM20357_Genyophryne_thomsoni:0.0335817241,BPBM31853_Genyophryne_aff__thomsoni_3:0.0939798043):0.0138463523):0.0248492227):0.0667063284,(((BPBM39929_Liophryne_miniafia:0.1053748101,(BPBM17890_Oxydactyla_crassa:0.0412878259,BPBM19360_Liophryne_magnitympanum:0.0585951638):0.0184368884):0.0275025972,(BPBM22754_Liophryne_schlaginhaufeni:0.0974936200,BPBM18315_Liophryne_allisoni:0.1208534773):0.0000023368):0.0032440628,BPBM22793_Sphenophryne_cornuta:0.1081366728):0.0064983140):0.0122697156):0.0050465355,((((BPBM38914_Barygenys_maculata:0.0359244123,BPBM25756_Barygenys_atra:0.0682184909):0.0208021529,BPBM15259_Barygenys_resima:0.0306339258):0.0296532791,(BPBM38904_Barygenys_apodasta:0.1071023316,(BPBM20126_Barygenys_aff__exsul_1:0.0645639540,BPBM20128_Barygenys_exsul:0.0530353296):0.0229829420):0.0937968170):0.0182697375,BPBM35986_Hylophorbus_cf__rufescens_17:0.0691442858):0.0369006129):0.0010905091,((((((BPBM40083_Copiula_sp_1:0.0238922673,BPBM20262_Copiula_sp_2:0.0528808096):0.0045909332,((((BPBM39007_Copiula_sp_3:0.0350852675,BPBM17084_Copiula_oxyrhina:0.0198405596):0.0301002322,BPBM15665_Copiula_minor:0.0541081371):0.0031024888,BPBM17827_Copiula_sp_4:0.0407339449):0.0107894379,(BPBM18605_Copiula_fistulans:0.0550499923,BPBM20287_Copiula_sp_6:0.0570134785):0.0006639849):0.0015745084):0.0244316261,MB309_Copiula_sp_5:0.1112136916):0.0411116002,(((BPBM35735_Austrochaperina_B_sp_3:0.0175059719,BPBM22668_Austrochaperina_B_septentrionalis:0.1078172640):0.0379696771,BPBM22656_Austrochaperina_B_blumi:0.0313953676):0.0420495815,BPBM22665_Austrochaperina_B_basipalmata:0.1016542105):0.0365555665):0.0072552921,((BPBM22664_Austrochaperina_A_sp_1:0.0070887374,BPBM22481_Austrochaperina_A_novaebritanniae:0.0070987837):0.1409229373,((BPBM40000_Austrochaperina_A_sp_2:0.0221569057,BPBM18388_Austrochaperina_A_parkeri:0.0292188725):0.1119766531,BPBM20112_Austrochaperina_A_yelaensis:0.1194146101):0.0095493360):0.0117593231):0.0041575440,((BPBM13862_Austrochaperina_B_macrorhyncha:0.0561610251,BPBM22708_Copiula_tyleri:0.0200559437):0.0642120202,BPBM25760_Barygenys_sp:0.0938540222):0.0133828551):0.0084238357):0.0014066551):0.0096407617,(((UMMZ242212_Austrochaperina_C_aff__palmipes_1:0.0103206954,MB539_Austrochaperina_C_aff__palmipes_2:0.0061658187):0.0173367062,(BPBM15234_Austrochaperina_C_aff__palmipes_3:0.0005338002,BPBM15232_Austrochaperina_C_aff__palmipes_3:0.0068771627):0.0119156002):0.0562345593,MB475_Austrochaperina_C_aff__palmipes_4:0.0531245467):0.0476756658):0.1523510473,UMMZ211174_Dyscophis_antongilli:0.1888117619):0.0601592217,UMMZ211181_Platypelis_grandis:0.2233127633,UMMZ219489_Scaphiophryne_marmorata:0.1258534766);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t nomerge10.nex.treefile -p nomerge10.nex.best_model.nex
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s ../../mesquite_alignment/asterophryinae_20230527.phy --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s ../../mesquite_alignment/asterophryinae_20230527.phy --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Fri Jun 30 21:19:15 2023
+Total CPU time used: 52.3405 seconds (0h:0m:52s)
+Total wall-clock time used: 52.4966 seconds (0h:0m:52s)
+

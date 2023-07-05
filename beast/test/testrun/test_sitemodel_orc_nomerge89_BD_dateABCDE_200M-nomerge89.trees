@@ -1,0 +1,497 @@
+#NEXUS
+
+Begin taxa;
+	Dimensions ntax=243;
+		Taxlabels
+			ABTC116941_Oreophryne_A_graminis
+			BPBM47733_Choerophryne_darlingtoni_complex_sp_1
+			BPBM47780_Cophixalus_cf__cryptotympanum
+			BPBM47792_Hylophorbus_cf__rufescens_14
+			BPBM47804_Cophixalus_darlingtoni
+			BPBM31882_Paedophryne_swiftorum_complex_sp_1
+			BPBM47713_Paedophryne_amauensis
+			BPBM47786_Callulops_sp_2
+			UMMZ242263_Cophixalus_variabilis_complex_sp_1
+			UMMZ242338_Liophryne_aff__dentata_1
+			UMMZ242317_Hylophorbus_cf__rufescens_1
+			UMMZ242212_Austrochaperina_C_aff__palmipes_1
+			UMMZ242361_Mantophryne_cf__lateralis_1
+			UMMZ242309_Genyophryne_aff__thomsoni_1
+			UMMZ242349_Cophixalus_verrucosus_complex_sp_1
+			UMMZ242404_Oreophryne_A_sp_8
+			UMMZ242232_Cophixalus_desticans_complex_sp_1
+			UMMZ242226_Callulops_doriae_complex_sp_1
+			FK16913_Paedophryne_titan
+			UMMZ242398_Oreophryne_B_penelopia
+			BPBM47888_Hylophorbus_cf__rufescens_13
+			JAM11383_Oreophryne_B_sp_5
+			BPBM35843_Cophixalus_cf__pipilans_1
+			BPBM40083_Copiula_sp_1
+			BPBM20571_Oreophryne_B_sp_2
+			BPBM22664_Austrochaperina_A_sp_1
+			BPBM20396_Mantophryne_cf__lateralis_1
+			BPBM48036_Paedophryne_sp_2
+			BPBM35561_Choerophryne_gudrunae
+			BPBM40135_Mantophryne_insignis
+			BPBM39638_Hylophorbus_myopicus
+			BPBM20572_Oreophryne_B_sp_3
+			BPBM13110_Asterophrys_slateri
+			BPBM33669_Callulops_wilhelmanus
+			BPBM16554_Oreophryne_A_philosylleptoris
+			BPBM20262_Copiula_sp_2
+			BPBM39000_Oreophryne_B_sp_1
+			BPBM34677_Oreophryne_A_cameroni
+			BPBM38990_Oreophryne_A_sp_2
+			BPBM16181_Hylophorbus_cf__rufescens_2
+			BPBM39048_Cophixalus_sp_3
+			BPBM34688_Oreophryne_A_biroi
+			BPBM38939_Copiula_sp_7
+			BPBM22675_Choerophryne_longirostris
+			BPBM18450_Hylophorbus_cf__rufescens_6
+			BPBM22504_Hylophorbus_cf__rufescens_12
+			BPBM39357_Oreophryne_B_sp_6
+			BPBM20522_Oreophryne_A_aurora
+			BPBM40145_Oreophryne_A_sp_6
+			BPBM39569_Hylophorbus_cf__rufescens_9
+			BPBM22780_Mantophryne_cf__lateralis_3
+			BPBM39007_Copiula_sp_3
+			BPBM19265_Mantophryne_cf__lateralis_4
+			BPBM33763_Oreophryne_A_anamiatoi
+			BPBM22692_Cophixalus_balbus
+			BPBM39244_Oreophryne_A_sp_3
+			BPBM22689_Oreophryne_A_cf__cameroni
+			BPBM18430_Cophixalus_albolineatus
+			BPBM38988_Oreophryne_B_sp_4
+			BPBM33707_Cophixalus_caverniphilus
+			BPBM39991_Choerophryne_bryonopsis
+			BPBM39631_Hylophorbus_cf__rufescens_7
+			BPBM19320_Cophixalus_nexipus
+			BPBM37122_Callulops_sp_1
+			BPBM34724_Hylophorbus_atrifasciatus
+			BPBM18392_Cophixalus_cheesmanae_complex_sp_1
+			BPBM39929_Liophryne_miniafia
+			BPBM35866_Hylophorbus_cf__rufescens_15
+			BPBM17959_Cophixalus_sp_4
+			BPBM40000_Austrochaperina_A_sp_2
+			BPBM19277_Cophixalus_iovaorum
+			BPBM19338_Hylophorbus_cf__rufescens_10
+			BPBM37232_Hylophorbus_cf__rufescens_3
+			BPBM38914_Barygenys_maculata
+			BPBM19371_Oreophryne_A_sp_4
+			BPBM33749_Hylophorbus_richardsi
+			BPBM18429_Cophixalus_albolineatus
+			BPBM33664_Choerophryne_darlingtoni_complex_sp_2
+			BPBM34679_Choerophryne_proboscidea
+			BPBM20538_Oreophryne_B_sp_3
+			BPBM19314_Cophixalus_ateles
+			BPBM38992_Oreophryne_A_sp_2
+			BPBM39510_Oreophryne_B_phoebe
+			BPBM37718_Cophixalus_clapporum
+			BPBM39344_Oreophryne_B_sp_4
+			BPBM38904_Barygenys_apodasta
+			BPBM20126_Barygenys_aff__exsul_1
+			BPBM15814_Cophixalus_variabilis_complex_sp_2
+			BPBM15708_Cophixalus_desticans_complex_sp_2
+			BPBM33674_Oreophryne_A_notata
+			BPBM35692_Hylophorbus_cf__proekes
+			BPBM20141_Callulops_doriae_complex_sp_2
+			BPBM17048_Hylophorbus_cf__rufescens_11
+			BPBM18509_Oreophryne_A_lemur
+			BPBM33780_Xenorhina_parkerorum
+			BPBM15259_Barygenys_resima
+			BPBM20501_Oreophryne_B_meliades
+			BPBM35986_Hylophorbus_cf__rufescens_17
+			BPBM27491_Cophixalus_verrucosus_complex_sp_3
+			BPBM15775_Oreophryne_B_equus
+			BPBM15410_Mantophryne_cf__lateralis_2
+			BPBM39366_Oreophryne_A_sp_5
+			BPBM37753_Paedophryne_dekot
+			BPBM15707_Cophixalus_sp_5
+			BPBM35735_Austrochaperina_B_sp_3
+			TNHC58922_Oreophryne_B_variabilis
+			CMNH1366_Oreophryne_A_anulata
+			KU321316_Oreophryne_A_nana
+			BPBM18605_Copiula_fistulans
+			BPBM41683_Aphantophryne_B_pansa_3
+			BPBM41681_Aphantophryne_B_pansa_3
+			BPBM41685_Aphantophryne_B_pansa_3
+			BPBM41682_Aphantophryne_B_pansa_3
+			BPBM17084_Copiula_oxyrhina
+			BPBM13862_Austrochaperina_B_macrorhyncha
+			BPBM18351_Choerophryne_gunnari
+			BPBM20357_Genyophryne_thomsoni
+			BPBM22740_Hylophorbus_cf__rufescens_16
+			BPBM20369_Hylophorbus_extimus
+			BPBM22761_Hylophorbus_proekes
+			BPBM15373_Liophryne_aff__dentata_2
+			BPBM22754_Liophryne_schlaginhaufeni
+			BPBM20142_Mantophryne_louisiadensis
+			BPBM22511_Oreophryne_A_brachypus
+			BPBM18510_Oreophryne_A_cf__geislerorum_1
+			BPBM17847_Choerophryne_sanguinopictus
+			BPBM16217_Oreophryne_A_inornata
+			BPBM16546_Oreophryne_B_insulana
+			BPBM22539_Oreophryne_A_loriae
+			BPBM17890_Oxydactyla_crassa
+			BPBM31477_Mantophryne_menziesi
+			BPBM22793_Sphenophryne_cornuta
+			BPBM22797_Xenorhina_arboricola
+			BPBM28179_Xenorhina_mehelyi
+			BPBM14060_Xenorhina_ocellata
+			BPBM22795_Xenorhina_tumulus
+			BPBM28153_Asterophrys_leucopus
+			BPBM22649_Choerophryne_brunhildae
+			BPBM18317_Choerophryne_exclamitans
+			BPBM28204_Asterophrys_turpicola
+			BPBM22665_Austrochaperina_B_basipalmata
+			BPBM22656_Austrochaperina_B_blumi
+			BPBM22708_Copiula_tyleri
+			BPBM22481_Austrochaperina_A_novaebritanniae
+			BPBM20112_Austrochaperina_A_yelaensis
+			BPBM15234_Austrochaperina_C_aff__palmipes_3
+			BPBM25756_Barygenys_atra
+			BPBM25760_Barygenys_sp
+			BPBM18504_Callulops_personatus
+			BPBM13155_Callulops_eremnosphax
+			BPBM20215_Cophixalus_cupricarenus
+			BPBM20197_Cophixalus_melanops
+			BPBM15665_Copiula_minor
+			BPBM20287_Copiula_sp_6
+			BPBM17827_Copiula_sp_4
+			BPBM18388_Austrochaperina_A_parkeri
+			BPBM15355_Hylophorbus_cf__rufescens_4
+			BPBM18033_Hylophorbus_cf__rufescens_8
+			BPBM18441_Hylophorbus_cf__rufescens_12
+			BPBM18315_Liophryne_allisoni
+			BPBM19360_Liophryne_magnitympanum
+			BPBM20397_Mantophryne_axanthogaster
+			BPBM22784_Oreophryne_A_parkeri
+			BPBM18128_Oreophryne_B_picticrus
+			BPBM18002_Oreophryne_A_sp_7
+			BPBM17980_Oreophryne_B_matawan
+			BPBM22668_Austrochaperina_B_septentrionalis
+			BPBM22789_Oreophryne_A_parkopanorum
+			BPBM21474_Xenorhina_adisca
+			BPBM22685_Choerophryne_rostellifer
+			UMMZ211174_Dyscophis_antongilli
+			UMMZ211181_Platypelis_grandis
+			UMMZ219489_Scaphiophryne_marmorata
+			BPBM20128_Barygenys_exsul
+			ZMB74609_Asterophrys_senglaubi
+			ZMB70535_Asterophrys_eurydactylus
+			ZMB70187_Asterophrys_cf__marani
+			ZMB63882_Asterophrys_marani
+			ZMB70185_Asterophrys_cf__marani
+			FK15527_Paedophryne_verrucosa
+			BPBM39156_Oreophryne_A_sp_1
+			BPBM19236_Callulops_bicolor
+			BPBM35836_Callulops_microtis
+			BPBM34741_Xenorhina_obesa
+			BPBM20532_Oreophryne_B_sp_3
+			BPBM15232_Austrochaperina_C_aff__palmipes_3
+			BPBM20469_Oreophryne_B_ezra
+			BPBM33637_Choerophryne_murrita
+			BPBM40143_Oreophryne_B_brunnea
+			BPBM18097_Cophixalus_timidus
+			BPBM20440_Oreophryne_B_meliades
+			BPBM34697_Xenorhina_oxycephala
+			BPBM16806_Callulops_robustus
+			MB233_Cophixalus_sp_1
+			MB291_Paedophryne_sp_1
+			MB294_Hylophorbus_cf__rufescens_12
+			MB300_Choerophryne_gunnari
+			MB302_Cophixalus_sp_2
+			MB309_Copiula_sp_5
+			MB327_Xenorhina_sp_1
+			MB331_Mantophryne_cf__lateralis_4
+			MB342_Oreophryne_A_loriae
+			MB463_Choerophryne_sp_2
+			MB466_Choerophryne_sp_1
+			MB470_Cophixalus_cheesmanae_complex_sp_2
+			MB472_Choerophryne_sp_4
+			MB475_Austrochaperina_C_aff__palmipes_4
+			MB479_Mantophryne_cf__lateralis_5
+			MB482_Cophixalus_linnaeus
+			MB483_Hylophorbus_cf__rufescens_5
+			MB484_Oreophryne_A_cf__geislerorum_2
+			MB486_Paedophryne_swiftorum_complex_sp_2
+			MB508_Callulops_doriae_complex_sp_1
+			MB518_Mantophryne_cf__lateralis_1
+			MB539_Austrochaperina_C_aff__palmipes_2
+			MB556_Hylophorbus_cf__rufescens_1
+			MB571_Cophixalus_variabilis_complex_sp_3
+			MB583_Cophixalus_verrucosus_complex_sp_2
+			MB593_Liophryne_aff__dentata_3
+			MB617_Cophixalus_desticans_complex_sp_1
+			MB626_Genyophryne_aff__thomsoni_2
+			MB627_Oreophryne_B_penelopia
+			BPBM31979_Hylophorbus_cf__rufescens_5
+			BPBM26182_Cophixalus_tomaiodactylus
+			BPBM23740_Callulops_personatus
+			BPBM25837_Choerophryne_sp_3
+			BPBM26194_Cophixalus_phaeobalius
+			BPBM25754_Choerophryne_sp_4
+			BPBM31337_Cophixalus_linnaeus
+			BPBM31847_Cophixalus_cf__pipilans_2
+			BPBM31853_Genyophryne_aff__thomsoni_3
+			BPBM31808_Choerophryne_sp_1
+			BPBM35367_Choerophryne_sp_4
+			AA24862_Asterophrys_sp
+			BPBM44363_Aphantophryne_sabini
+			BPBM44369_Aphantophryne_sabini
+			BPBM44373_Aphantophryne_sabini
+			BJE1120_Oreophryne_A_senckenbergiana
+			BJE1143_Oreophryne_A_senckenbergiana
+			BJE1144_Oreophryne_A_senckenbergiana
+			BJE1248_Oreophryne_A_frontifasciata
+			BPBM43952_Aphantophryne_pansa
+			BPBM43954_Aphantophryne_pansa
+			;
+End;
+Begin trees;
+	Translate
+		   1 ABTC116941_Oreophryne_A_graminis,
+		   2 BPBM47733_Choerophryne_darlingtoni_complex_sp_1,
+		   3 BPBM47780_Cophixalus_cf__cryptotympanum,
+		   4 BPBM47792_Hylophorbus_cf__rufescens_14,
+		   5 BPBM47804_Cophixalus_darlingtoni,
+		   6 BPBM31882_Paedophryne_swiftorum_complex_sp_1,
+		   7 BPBM47713_Paedophryne_amauensis,
+		   8 BPBM47786_Callulops_sp_2,
+		   9 UMMZ242263_Cophixalus_variabilis_complex_sp_1,
+		  10 UMMZ242338_Liophryne_aff__dentata_1,
+		  11 UMMZ242317_Hylophorbus_cf__rufescens_1,
+		  12 UMMZ242212_Austrochaperina_C_aff__palmipes_1,
+		  13 UMMZ242361_Mantophryne_cf__lateralis_1,
+		  14 UMMZ242309_Genyophryne_aff__thomsoni_1,
+		  15 UMMZ242349_Cophixalus_verrucosus_complex_sp_1,
+		  16 UMMZ242404_Oreophryne_A_sp_8,
+		  17 UMMZ242232_Cophixalus_desticans_complex_sp_1,
+		  18 UMMZ242226_Callulops_doriae_complex_sp_1,
+		  19 FK16913_Paedophryne_titan,
+		  20 UMMZ242398_Oreophryne_B_penelopia,
+		  21 BPBM47888_Hylophorbus_cf__rufescens_13,
+		  22 JAM11383_Oreophryne_B_sp_5,
+		  23 BPBM35843_Cophixalus_cf__pipilans_1,
+		  24 BPBM40083_Copiula_sp_1,
+		  25 BPBM20571_Oreophryne_B_sp_2,
+		  26 BPBM22664_Austrochaperina_A_sp_1,
+		  27 BPBM20396_Mantophryne_cf__lateralis_1,
+		  28 BPBM48036_Paedophryne_sp_2,
+		  29 BPBM35561_Choerophryne_gudrunae,
+		  30 BPBM40135_Mantophryne_insignis,
+		  31 BPBM39638_Hylophorbus_myopicus,
+		  32 BPBM20572_Oreophryne_B_sp_3,
+		  33 BPBM13110_Asterophrys_slateri,
+		  34 BPBM33669_Callulops_wilhelmanus,
+		  35 BPBM16554_Oreophryne_A_philosylleptoris,
+		  36 BPBM20262_Copiula_sp_2,
+		  37 BPBM39000_Oreophryne_B_sp_1,
+		  38 BPBM34677_Oreophryne_A_cameroni,
+		  39 BPBM38990_Oreophryne_A_sp_2,
+		  40 BPBM16181_Hylophorbus_cf__rufescens_2,
+		  41 BPBM39048_Cophixalus_sp_3,
+		  42 BPBM34688_Oreophryne_A_biroi,
+		  43 BPBM38939_Copiula_sp_7,
+		  44 BPBM22675_Choerophryne_longirostris,
+		  45 BPBM18450_Hylophorbus_cf__rufescens_6,
+		  46 BPBM22504_Hylophorbus_cf__rufescens_12,
+		  47 BPBM39357_Oreophryne_B_sp_6,
+		  48 BPBM20522_Oreophryne_A_aurora,
+		  49 BPBM40145_Oreophryne_A_sp_6,
+		  50 BPBM39569_Hylophorbus_cf__rufescens_9,
+		  51 BPBM22780_Mantophryne_cf__lateralis_3,
+		  52 BPBM39007_Copiula_sp_3,
+		  53 BPBM19265_Mantophryne_cf__lateralis_4,
+		  54 BPBM33763_Oreophryne_A_anamiatoi,
+		  55 BPBM22692_Cophixalus_balbus,
+		  56 BPBM39244_Oreophryne_A_sp_3,
+		  57 BPBM22689_Oreophryne_A_cf__cameroni,
+		  58 BPBM18430_Cophixalus_albolineatus,
+		  59 BPBM38988_Oreophryne_B_sp_4,
+		  60 BPBM33707_Cophixalus_caverniphilus,
+		  61 BPBM39991_Choerophryne_bryonopsis,
+		  62 BPBM39631_Hylophorbus_cf__rufescens_7,
+		  63 BPBM19320_Cophixalus_nexipus,
+		  64 BPBM37122_Callulops_sp_1,
+		  65 BPBM34724_Hylophorbus_atrifasciatus,
+		  66 BPBM18392_Cophixalus_cheesmanae_complex_sp_1,
+		  67 BPBM39929_Liophryne_miniafia,
+		  68 BPBM35866_Hylophorbus_cf__rufescens_15,
+		  69 BPBM17959_Cophixalus_sp_4,
+		  70 BPBM40000_Austrochaperina_A_sp_2,
+		  71 BPBM19277_Cophixalus_iovaorum,
+		  72 BPBM19338_Hylophorbus_cf__rufescens_10,
+		  73 BPBM37232_Hylophorbus_cf__rufescens_3,
+		  74 BPBM38914_Barygenys_maculata,
+		  75 BPBM19371_Oreophryne_A_sp_4,
+		  76 BPBM33749_Hylophorbus_richardsi,
+		  77 BPBM18429_Cophixalus_albolineatus,
+		  78 BPBM33664_Choerophryne_darlingtoni_complex_sp_2,
+		  79 BPBM34679_Choerophryne_proboscidea,
+		  80 BPBM20538_Oreophryne_B_sp_3,
+		  81 BPBM19314_Cophixalus_ateles,
+		  82 BPBM38992_Oreophryne_A_sp_2,
+		  83 BPBM39510_Oreophryne_B_phoebe,
+		  84 BPBM37718_Cophixalus_clapporum,
+		  85 BPBM39344_Oreophryne_B_sp_4,
+		  86 BPBM38904_Barygenys_apodasta,
+		  87 BPBM20126_Barygenys_aff__exsul_1,
+		  88 BPBM15814_Cophixalus_variabilis_complex_sp_2,
+		  89 BPBM15708_Cophixalus_desticans_complex_sp_2,
+		  90 BPBM33674_Oreophryne_A_notata,
+		  91 BPBM35692_Hylophorbus_cf__proekes,
+		  92 BPBM20141_Callulops_doriae_complex_sp_2,
+		  93 BPBM17048_Hylophorbus_cf__rufescens_11,
+		  94 BPBM18509_Oreophryne_A_lemur,
+		  95 BPBM33780_Xenorhina_parkerorum,
+		  96 BPBM15259_Barygenys_resima,
+		  97 BPBM20501_Oreophryne_B_meliades,
+		  98 BPBM35986_Hylophorbus_cf__rufescens_17,
+		  99 BPBM27491_Cophixalus_verrucosus_complex_sp_3,
+		 100 BPBM15775_Oreophryne_B_equus,
+		 101 BPBM15410_Mantophryne_cf__lateralis_2,
+		 102 BPBM39366_Oreophryne_A_sp_5,
+		 103 BPBM37753_Paedophryne_dekot,
+		 104 BPBM15707_Cophixalus_sp_5,
+		 105 BPBM35735_Austrochaperina_B_sp_3,
+		 106 TNHC58922_Oreophryne_B_variabilis,
+		 107 CMNH1366_Oreophryne_A_anulata,
+		 108 KU321316_Oreophryne_A_nana,
+		 109 BPBM18605_Copiula_fistulans,
+		 110 BPBM41683_Aphantophryne_B_pansa_3,
+		 111 BPBM41681_Aphantophryne_B_pansa_3,
+		 112 BPBM41685_Aphantophryne_B_pansa_3,
+		 113 BPBM41682_Aphantophryne_B_pansa_3,
+		 114 BPBM17084_Copiula_oxyrhina,
+		 115 BPBM13862_Austrochaperina_B_macrorhyncha,
+		 116 BPBM18351_Choerophryne_gunnari,
+		 117 BPBM20357_Genyophryne_thomsoni,
+		 118 BPBM22740_Hylophorbus_cf__rufescens_16,
+		 119 BPBM20369_Hylophorbus_extimus,
+		 120 BPBM22761_Hylophorbus_proekes,
+		 121 BPBM15373_Liophryne_aff__dentata_2,
+		 122 BPBM22754_Liophryne_schlaginhaufeni,
+		 123 BPBM20142_Mantophryne_louisiadensis,
+		 124 BPBM22511_Oreophryne_A_brachypus,
+		 125 BPBM18510_Oreophryne_A_cf__geislerorum_1,
+		 126 BPBM17847_Choerophryne_sanguinopictus,
+		 127 BPBM16217_Oreophryne_A_inornata,
+		 128 BPBM16546_Oreophryne_B_insulana,
+		 129 BPBM22539_Oreophryne_A_loriae,
+		 130 BPBM17890_Oxydactyla_crassa,
+		 131 BPBM31477_Mantophryne_menziesi,
+		 132 BPBM22793_Sphenophryne_cornuta,
+		 133 BPBM22797_Xenorhina_arboricola,
+		 134 BPBM28179_Xenorhina_mehelyi,
+		 135 BPBM14060_Xenorhina_ocellata,
+		 136 BPBM22795_Xenorhina_tumulus,
+		 137 BPBM28153_Asterophrys_leucopus,
+		 138 BPBM22649_Choerophryne_brunhildae,
+		 139 BPBM18317_Choerophryne_exclamitans,
+		 140 BPBM28204_Asterophrys_turpicola,
+		 141 BPBM22665_Austrochaperina_B_basipalmata,
+		 142 BPBM22656_Austrochaperina_B_blumi,
+		 143 BPBM22708_Copiula_tyleri,
+		 144 BPBM22481_Austrochaperina_A_novaebritanniae,
+		 145 BPBM20112_Austrochaperina_A_yelaensis,
+		 146 BPBM15234_Austrochaperina_C_aff__palmipes_3,
+		 147 BPBM25756_Barygenys_atra,
+		 148 BPBM25760_Barygenys_sp,
+		 149 BPBM18504_Callulops_personatus,
+		 150 BPBM13155_Callulops_eremnosphax,
+		 151 BPBM20215_Cophixalus_cupricarenus,
+		 152 BPBM20197_Cophixalus_melanops,
+		 153 BPBM15665_Copiula_minor,
+		 154 BPBM20287_Copiula_sp_6,
+		 155 BPBM17827_Copiula_sp_4,
+		 156 BPBM18388_Austrochaperina_A_parkeri,
+		 157 BPBM15355_Hylophorbus_cf__rufescens_4,
+		 158 BPBM18033_Hylophorbus_cf__rufescens_8,
+		 159 BPBM18441_Hylophorbus_cf__rufescens_12,
+		 160 BPBM18315_Liophryne_allisoni,
+		 161 BPBM19360_Liophryne_magnitympanum,
+		 162 BPBM20397_Mantophryne_axanthogaster,
+		 163 BPBM22784_Oreophryne_A_parkeri,
+		 164 BPBM18128_Oreophryne_B_picticrus,
+		 165 BPBM18002_Oreophryne_A_sp_7,
+		 166 BPBM17980_Oreophryne_B_matawan,
+		 167 BPBM22668_Austrochaperina_B_septentrionalis,
+		 168 BPBM22789_Oreophryne_A_parkopanorum,
+		 169 BPBM21474_Xenorhina_adisca,
+		 170 BPBM22685_Choerophryne_rostellifer,
+		 171 UMMZ211174_Dyscophis_antongilli,
+		 172 UMMZ211181_Platypelis_grandis,
+		 173 UMMZ219489_Scaphiophryne_marmorata,
+		 174 BPBM20128_Barygenys_exsul,
+		 175 ZMB74609_Asterophrys_senglaubi,
+		 176 ZMB70535_Asterophrys_eurydactylus,
+		 177 ZMB70187_Asterophrys_cf__marani,
+		 178 ZMB63882_Asterophrys_marani,
+		 179 ZMB70185_Asterophrys_cf__marani,
+		 180 FK15527_Paedophryne_verrucosa,
+		 181 BPBM39156_Oreophryne_A_sp_1,
+		 182 BPBM19236_Callulops_bicolor,
+		 183 BPBM35836_Callulops_microtis,
+		 184 BPBM34741_Xenorhina_obesa,
+		 185 BPBM20532_Oreophryne_B_sp_3,
+		 186 BPBM15232_Austrochaperina_C_aff__palmipes_3,
+		 187 BPBM20469_Oreophryne_B_ezra,
+		 188 BPBM33637_Choerophryne_murrita,
+		 189 BPBM40143_Oreophryne_B_brunnea,
+		 190 BPBM18097_Cophixalus_timidus,
+		 191 BPBM20440_Oreophryne_B_meliades,
+		 192 BPBM34697_Xenorhina_oxycephala,
+		 193 BPBM16806_Callulops_robustus,
+		 194 MB233_Cophixalus_sp_1,
+		 195 MB291_Paedophryne_sp_1,
+		 196 MB294_Hylophorbus_cf__rufescens_12,
+		 197 MB300_Choerophryne_gunnari,
+		 198 MB302_Cophixalus_sp_2,
+		 199 MB309_Copiula_sp_5,
+		 200 MB327_Xenorhina_sp_1,
+		 201 MB331_Mantophryne_cf__lateralis_4,
+		 202 MB342_Oreophryne_A_loriae,
+		 203 MB463_Choerophryne_sp_2,
+		 204 MB466_Choerophryne_sp_1,
+		 205 MB470_Cophixalus_cheesmanae_complex_sp_2,
+		 206 MB472_Choerophryne_sp_4,
+		 207 MB475_Austrochaperina_C_aff__palmipes_4,
+		 208 MB479_Mantophryne_cf__lateralis_5,
+		 209 MB482_Cophixalus_linnaeus,
+		 210 MB483_Hylophorbus_cf__rufescens_5,
+		 211 MB484_Oreophryne_A_cf__geislerorum_2,
+		 212 MB486_Paedophryne_swiftorum_complex_sp_2,
+		 213 MB508_Callulops_doriae_complex_sp_1,
+		 214 MB518_Mantophryne_cf__lateralis_1,
+		 215 MB539_Austrochaperina_C_aff__palmipes_2,
+		 216 MB556_Hylophorbus_cf__rufescens_1,
+		 217 MB571_Cophixalus_variabilis_complex_sp_3,
+		 218 MB583_Cophixalus_verrucosus_complex_sp_2,
+		 219 MB593_Liophryne_aff__dentata_3,
+		 220 MB617_Cophixalus_desticans_complex_sp_1,
+		 221 MB626_Genyophryne_aff__thomsoni_2,
+		 222 MB627_Oreophryne_B_penelopia,
+		 223 BPBM31979_Hylophorbus_cf__rufescens_5,
+		 224 BPBM26182_Cophixalus_tomaiodactylus,
+		 225 BPBM23740_Callulops_personatus,
+		 226 BPBM25837_Choerophryne_sp_3,
+		 227 BPBM26194_Cophixalus_phaeobalius,
+		 228 BPBM25754_Choerophryne_sp_4,
+		 229 BPBM31337_Cophixalus_linnaeus,
+		 230 BPBM31847_Cophixalus_cf__pipilans_2,
+		 231 BPBM31853_Genyophryne_aff__thomsoni_3,
+		 232 BPBM31808_Choerophryne_sp_1,
+		 233 BPBM35367_Choerophryne_sp_4,
+		 234 AA24862_Asterophrys_sp,
+		 235 BPBM44363_Aphantophryne_sabini,
+		 236 BPBM44369_Aphantophryne_sabini,
+		 237 BPBM44373_Aphantophryne_sabini,
+		 238 BJE1120_Oreophryne_A_senckenbergiana,
+		 239 BJE1143_Oreophryne_A_senckenbergiana,
+		 240 BJE1144_Oreophryne_A_senckenbergiana,
+		 241 BJE1248_Oreophryne_A_frontifasciata,
+		 242 BPBM43952_Aphantophryne_pansa,
+		 243 BPBM43954_Aphantophryne_pansa
+;
+tree STATE_0 = (((((((((((((((((1[&rate=0.5]:0.01652921399999996,90[&rate=0.5]:0.01652921399999996)[&rate=0.5]:0.0621787,(((38[&rate=0.5]:0.04252490799999997,57[&rate=0.5]:0.04252490799999997)[&rate=0.5]:0.002362809999999993,108[&rate=0.5]:0.044887717999999965)[&rate=0.5]:5.036959999999979E-4,107[&rate=0.5]:0.04539141399999996)[&rate=0.5]:0.0333165)[&rate=0.5]:0.05311780000000002,(163[&rate=0.5]:0.10602651399999996,(((238[&rate=0.5]:4.139999999763777E-7,240[&rate=0.5]:4.139999999763777E-7)[&rate=0.5]:0.0,239[&rate=0.5]:4.139999999763777E-7)[&rate=0.5]:0.055671799999999994,241[&rate=0.5]:0.05567221399999997)[&rate=0.5]:0.05035429999999999)[&rate=0.5]:0.025799200000000022)[&rate=0.5]:0.001057629999999976,42[&rate=0.5]:0.13288334399999996)[&rate=0.5]:0.0,(54[&rate=0.5]:0.09297544399999996,168[&rate=0.5]:0.09297544399999996)[&rate=0.5]:0.039907899999999996)[&rate=0.5]:0.0,(((((16[&rate=0.5]:0.015216743999999977,35[&rate=0.5]:0.015216743999999977)[&rate=0.5]:0.04920949999999999,((124[&rate=0.5]:0.013281973999999974,(125[&rate=0.5]:0.01103090399999998,181[&rate=0.5]:0.01103090399999998)[&rate=0.5]:0.002251069999999994)[&rate=0.5]:0.009758369999999988,211[&rate=0.5]:0.023040343999999963)[&rate=0.5]:0.0413859)[&rate=0.5]:0.011532700000000007,127[&rate=0.5]:0.07595894399999997)[&rate=0.5]:0.011402899999999994,(((((39[&rate=0.5]:3.4399999995771147E-7,82[&rate=0.5]:3.4399999995771147E-7)[&rate=0.5]:0.011550000000000005,56[&rate=0.5]:0.011550343999999962)[&rate=0.5]:0.01578679999999999,((49[&rate=0.5]:0.01937649299999994,165[&rate=0.5]:0.01937649299999994)[&rate=0.5]:0.0077370700000000125,((75[&rate=0.5]:0.009186352999999953,102[&rate=0.5]:0.009186352999999953)[&rate=0.5]:0.010775000000000007,94[&rate=0.5]:0.01996135299999996)[&rate=0.5]:0.007152209999999992)[&rate=0.5]:2.2358100000000047E-4)[&rate=0.5]:0.023991100000000015,103[&rate=0.5]:0.05132824399999997)[&rate=0.5]:0.01439660000000001,(129[&rate=0.5]:0.0037347439999999843,202[&rate=0.5]:0.0037347439999999843)[&rate=0.5]:0.06199009999999999)[&rate=0.5]:0.02163699999999999)[&rate=0.5]:0.016539300000000007,48[&rate=0.5]:0.10390114399999997)[&rate=0.5]:0.028982199999999986)[&rate=0.5]:0.0,47[&rate=0.5]:0.13288334399999996)[&rate=0.5]:0.010034900000000013,((((((3[&rate=0.5]:0.04991696899999995,60[&rate=0.5]:0.04991696899999995)[&rate=0.5]:0.07353990000000002,(23[&rate=0.5]:0.10108736899999995,55[&rate=0.5]:0.10108736899999995)[&rate=0.5]:0.022369500000000014)[&rate=0.5]:0.017571000000000003,(((((((9[&rate=0.5]:0.020036259999999945,(88[&rate=0.5]:0.014331509999999936,217[&rate=0.5]:0.014331509999999936)[&rate=0.5]:0.005704750000000008)[&rate=0.5]:0.061810400000000015,((81[&rate=0.5]:0.051671709999999954,194[&rate=0.5]:0.051671709999999954)[&rate=0.5]:0.028580099999999997,198[&rate=0.5]:0.08025180999999995)[&rate=0.5]:0.0015948500000000088)[&rate=0.5]:0.007338210000000012,(41[&rate=0.5]:0.015574069999999968,190[&rate=0.5]:0.015574069999999968)[&rate=0.5]:0.0736108)[&rate=0.5]:0.014071799999999995,(209[&rate=0.5]:0.0012156699999999743,229[&rate=0.5]:0.0012156699999999743)[&rate=0.5]:0.10204099999999999)[&rate=0.5]:0.0242463,(((((17[&rate=0.5]:8.80129999999979E-4,220[&rate=0.5]:8.80129999999979E-4)[&rate=0.5]:0.008874340000000008,89[&rate=0.5]:0.009754469999999987)[&rate=0.5]:0.10735699999999998,((58[&rate=0.5]:0.0023205699999999663,77[&rate=0.5]:0.0023205699999999663)[&rate=0.5]:0.033347600000000005,230[&rate=0.5]:0.03566816999999997)[&rate=0.5]:0.0814433)[&rate=0.5]:0.0,(84[&rate=0.5]:0.05603456999999998,151[&rate=0.5]:0.05603456999999998)[&rate=0.5]:0.06107689999999999)[&rate=0.5]:0.0,152[&rate=0.5]:0.11711146999999997)[&rate=0.5]:0.010391499999999998)[&rate=0.5]:2.2953900000000083E-4,((((15[&rate=0.5]:0.006466108999999998,218[&rate=0.5]:0.006466108999999998)[&rate=0.5]:0.04183529999999999,99[&rate=0.5]:0.04830140899999999)[&rate=0.5]:0.018974400000000002,(63[&rate=0.5]:0.023490809,69[&rate=0.5]:0.023490809)[&rate=0.5]:0.04378499999999999)[&rate=0.5]:0.01954729999999999,(66[&rate=0.5]:0.01547160899999997,205[&rate=0.5]:0.01547160899999997)[&rate=0.5]:0.07135150000000001)[&rate=0.5]:0.040909399999999985)[&rate=0.5]:0.008870369999999989,(224[&rate=0.5]:0.09251887899999997,227[&rate=0.5]:0.09251887899999997)[&rate=0.5]:0.044083999999999984)[&rate=0.5]:0.0044249900000000175)[&rate=0.5]:0.0010828499999999963,5[&rate=0.5]:0.14211071899999997)[&rate=0.5]:8.075250000000034E-4,((43[&rate=0.5]:0.04204184399999997,71[&rate=0.5]:0.04204184399999997)[&rate=0.5]:0.021679000000000004,104[&rate=0.5]:0.06372084399999997)[&rate=0.5]:0.0791974)[&rate=0.5]:0.0,((((6[&rate=0.5]:0.011092043999999968,212[&rate=0.5]:0.011092043999999968)[&rate=0.5]:0.04979320000000001,(7[&rate=0.5]:0.00486934399999997,195[&rate=0.5]:0.00486934399999997)[&rate=0.5]:0.05601590000000001)[&rate=0.5]:0.014181,(19[&rate=0.5]:0.03632984399999997,28[&rate=0.5]:0.03632984399999997)[&rate=0.5]:0.038736400000000004)[&rate=0.5]:0.0406386,180[&rate=0.5]:0.11570484399999997)[&rate=0.5]:0.0272134)[&rate=0.5]:0.0)[&rate=0.5]:0.0,((((((((20[&rate=0.5]:0.002130211999999937,222[&rate=0.5]:0.002130211999999937)[&rate=0.5]:0.03481200000000001,128[&rate=0.5]:0.03694221199999995)[&rate=0.5]:0.019102199999999986,(83[&rate=0.5]:0.029577511999999945,(100[&rate=0.5]:0.023174471999999946,164[&rate=0.5]:0.023174471999999946)[&rate=0.5]:0.006403039999999999)[&rate=0.5]:0.026466899999999988)[&rate=0.5]:0.01119980000000001,((97[&rate=0.5]:3.119999999467993E-7,191[&rate=0.5]:3.119999999467993E-7)[&rate=0.5]:0.0672439,187[&rate=0.5]:0.06724421199999994)[&rate=0.5]:0.0)[&rate=0.5]:9.300620000000093E-4,((37[&rate=0.5]:0.015101773999999957,189[&rate=0.5]:0.015101773999999957)[&rate=0.5]:0.023601700000000003,166[&rate=0.5]:0.03870347399999996)[&rate=0.5]:0.02947079999999999)[&rate=0.5]:0.029572000000000015,(25[&rate=0.5]:0.05870417399999997,(32[&rate=0.5]:0.004434773999999975,(80[&rate=0.5]:0.0028896639999999862,185[&rate=0.5]:0.0028896639999999862)[&rate=0.5]:0.0015451099999999884)[&rate=0.5]:0.054269399999999995)[&rate=0.5]:0.039042099999999996)[&rate=0.5]:0.026947300000000007,((59[&rate=0.5]:0.009787373999999988,85[&rate=0.5]:0.009787373999999988)[&rate=0.5]:0.07049069999999999,(((((110[&rate=0.5]:0.0012304298999999685,112[&rate=0.5]:0.0012304298999999685)[&rate=0.5]:8.359410000000067E-5,111[&rate=0.5]:0.0013140239999999692)[&rate=0.5]:4.712199999999944E-4,113[&rate=0.5]:0.0017852439999999636)[&rate=0.5]:0.0030605300000000057,(242[&rate=0.5]:0.0011230639999999792,243[&rate=0.5]:0.0011230639999999792)[&rate=0.5]:0.00372270999999999)[&rate=0.5]:0.010284500000000002,((235[&rate=0.5]:8.779239999999744E-4,237[&rate=0.5]:8.779239999999744E-4)[&rate=0.5]:0.0026568499999999884,236[&rate=0.5]:0.0035347739999999628)[&rate=0.5]:0.011595500000000009)[&rate=0.5]:0.0651478)[&rate=0.5]:0.0444155)[&rate=0.5]:0.0125421,(22[&rate=0.5]:0.03580367399999998,106[&rate=0.5]:0.03580367399999998)[&rate=0.5]:0.101432)[&rate=0.5]:0.005682569999999998)[&rate=0.5]:0.0,((((2[&rate=0.5]:0.015960983999999984,78[&rate=0.5]:0.015960983999999984)[&rate=0.5]:0.06286339999999999,(138[&rate=0.5]:0.06776548399999996,188[&rate=0.5]:0.06776548399999996)[&rate=0.5]:0.01105890000000001)[&rate=0.5]:0.03496060000000001,((44[&rate=0.5]:0.028971283999999986,79[&rate=0.5]:0.028971283999999986)[&rate=0.5]:0.05309749999999999,170[&rate=0.5]:0.08206878399999998)[&rate=0.5]:0.0317162)[&rate=0.5]:0.022757899999999998,(((29[&rate=0.5]:0.01612672399999998,(204[&rate=0.5]:0.002688423999999995,232[&rate=0.5]:0.002688423999999995)[&rate=0.5]:0.013438299999999986)[&rate=0.5]:0.007239560000000006,139[&rate=0.5]:0.023366283999999987)[&rate=0.5]:0.0847772,((61[&rate=0.5]:0.08112279399999997,((116[&rate=0.5]:0.0021513239999999823,197[&rate=0.5]:0.0021513239999999823)[&rate=0.5]:0.069349,((126[&rate=0.5]:0.040497193999999986,203[&rate=0.5]:0.040497193999999986)[&rate=0.5]:0.025174000000000002,226[&rate=0.5]:0.06567119399999999)[&rate=0.5]:0.005829129999999988)[&rate=0.5]:0.009622469999999994)[&rate=0.5]:0.0033039900000000066,((206[&rate=0.5]:0.0018712139999999544,233[&rate=0.5]:0.0018712139999999544)[&rate=0.5]:0.0014544700000000133,228[&rate=0.5]:0.0033256839999999677)[&rate=0.5]:0.08110110000000001)[&rate=0.5]:0.023716700000000007)[&rate=0.5]:0.02839939999999999)[&rate=0.5]:0.006375359999999997)[&rate=0.5]:0.0,(((12[&rate=0.5]:0.006209343999999978,215[&rate=0.5]:0.006209343999999978)[&rate=0.5]:0.012719399999999992,(146[&rate=0.5]:0.0044329439999999665,186[&rate=0.5]:0.0044329439999999665)[&rate=0.5]:0.014495800000000003)[&rate=0.5]:0.052061300000000005,207[&rate=0.5]:0.07099004399999997)[&rate=0.5]:0.0719282)[&rate=0.5]:0.0,(((((((24[&rate=0.5]:0.047497784000000015,(153[&rate=0.5]:0.047497784000000015,(155[&rate=0.5]:0.047497784000000015,199[&rate=0.5]:0.047497784000000015)[&rate=0.5]:0.0)[&rate=0.5]:0.0)[&rate=0.5]:0.0027450699999999884,109[&rate=0.5]:0.050242854)[&rate=0.5]:0.003493649999999987,36[&rate=0.5]:0.05373650399999999)[&rate=0.5]:0.00534098999999999,154[&rate=0.5]:0.05907749399999998)[&rate=0.5]:0.012658400000000014,(52[&rate=0.5]:0.046695494000000004,114[&rate=0.5]:0.046695494000000004)[&rate=0.5]:0.02504039999999999)[&rate=0.5]:0.058658899999999986,((26[&rate=0.5]:0.005137383999999995,144[&rate=0.5]:0.005137383999999995)[&rate=0.5]:0.12226599999999999,((70[&rate=0.5]:0.023094313999999977,156[&rate=0.5]:0.023094313999999977)[&rate=0.5]:0.0986302,145[&rate=0.5]:0.12172451399999998)[&rate=0.5]:0.0056788700000000025)[&rate=0.5]:0.00299141)[&rate=0.5]:0.006134639999999997,(((((74[&rate=0.5]:0.04451372399999998,147[&rate=0.5]:0.04451372399999998)[&rate=0.5]:0.009266030000000008,96[&rate=0.5]:0.053779753999999985)[&rate=0.5]:0.050377299999999986,(86[&rate=0.5]:0.056034553999999986,(87[&rate=0.5]:0.04553565399999998,174[&rate=0.5]:0.04553565399999998)[&rate=0.5]:0.010498900000000005)[&rate=0.5]:0.048122499999999985)[&rate=0.5]:0.019495300000000007,148[&rate=0.5]:0.12365235399999998)[&rate=0.5]:0.00799293999999999,((((105[&rate=0.5]:0.02745619399999999,167[&rate=0.5]:0.02745619399999999)[&rate=0.5]:0.01845559999999999,142[&rate=0.5]:0.04591179399999998)[&rate=0.5]:0.03904940000000001,141[&rate=0.5]:0.08496119399999999)[&rate=0.5]:0.0189511,(115[&rate=0.5]:0.036314594000000006,143[&rate=0.5]:0.036314594000000006)[&rate=0.5]:0.06759769999999998)[&rate=0.5]:0.02773299999999998)[&rate=0.5]:0.004884140000000009)[&rate=0.5]:0.006388809999999995)[&rate=0.5]:0.0,(((((((((4[&rate=0.5]:0.055153943999999955,(21[&rate=0.5]:0.027360843999999968,((46[&rate=0.5]:0.0020925239999999568,159[&rate=0.5]:0.0020925239999999568)[&rate=0.5]:0.002872819999999998,196[&rate=0.5]:0.004965343999999955)[&rate=0.5]:0.022395500000000013)[&rate=0.5]:0.027793099999999987)[&rate=0.5]:0.011426700000000012,(68[&rate=0.5]:0.033794543999999954,118[&rate=0.5]:0.033794543999999954)[&rate=0.5]:0.03278610000000001)[&rate=0.5]:0.0013238700000000048,65[&rate=0.5]:0.06790451399999997)[&rate=0.5]:0.0,((((((((11[&rate=0.5]:9.817949999999798E-4,216[&rate=0.5]:9.817949999999798E-4)[&rate=0.5]:0.01594970000000001,40[&rate=0.5]:0.01693149499999999)[&rate=0.5]:0.009244869999999988,(73[&rate=0.5]:0.023262424999999975,157[&rate=0.5]:0.023262424999999975)[&rate=0.5]:0.0029139400000000037)[&rate=0.5]:7.461490000000015E-4,(45[&rate=0.5]:0.013606113999999975,(210[&rate=0.5]:2.463139999999697E-4,223[&rate=0.5]:2.463139999999697E-4)[&rate=0.5]:0.013359800000000005)[&rate=0.5]:0.013316400000000006)[&rate=0.5]:0.003338630000000009,((50[&rate=0.5]:0.017754203999999996,(62[&rate=0.5]:0.016914894999999985,158[&rate=0.5]:0.016914894999999985)[&rate=0.5]:8.393090000000103E-4)[&rate=0.5]:0.006897789999999987,72[&rate=0.5]:0.024651993999999983)[&rate=0.5]:0.005609150000000007)[&rate=0.5]:0.006014049999999993,93[&rate=0.5]:0.03627519399999998)[&rate=0.5]:0.0010813199999999967,31[&rate=0.5]:0.03735651399999998)[&rate=0.5]:0.0,(119[&rate=0.5]:0.01856911399999997,120[&rate=0.5]:0.01856911399999997)[&rate=0.5]:0.01878740000000001)[&rate=0.5]:0.030547999999999992)[&rate=0.5]:0.010042999999999996,91[&rate=0.5]:0.07794751399999997)[&rate=0.5]:0.01076569999999999,(76[&rate=0.5]:0.07381931399999997,98[&rate=0.5]:0.07381931399999997)[&rate=0.5]:0.014893899999999988)[&rate=0.5]:0.016509999999999997,((((((13[&rate=0.5]:0.003328093999999976,(27[&rate=0.5]:9.862839999999762E-4,214[&rate=0.5]:9.862839999999762E-4)[&rate=0.5]:0.0023418099999999997)[&rate=0.5]:0.012807399999999997,101[&rate=0.5]:0.016135493999999972)[&rate=0.5]:0.03362699999999999,(51[&rate=0.5]:0.02221629399999997,((53[&rate=0.5]:2.1131399999996248E-4,201[&rate=0.5]:2.1131399999996248E-4)[&rate=0.5]:0.018557500000000005,208[&rate=0.5]:0.018768813999999967)[&rate=0.5]:0.0034474800000000028)[&rate=0.5]:0.027546199999999993)[&rate=0.5]:0.01033210000000001,30[&rate=0.5]:0.06009459399999997)[&rate=0.5]:0.014341799999999988,131[&rate=0.5]:0.07443639399999996)[&rate=0.5]:0.020923799999999992,(123[&rate=0.5]:0.03735659399999994,162[&rate=0.5]:0.03735659399999994)[&rate=0.5]:0.058003600000000016)[&rate=0.5]:0.00986302)[&rate=0.5]:0.01147780000000001,((8[&rate=0.5]:0.07422356399999996,((((((18[&rate=0.5]:0.0020450039999999337,213[&rate=0.5]:0.0020450039999999337)[&rate=0.5]:0.0030429200000000045,92[&rate=0.5]:0.005087923999999938)[&rate=0.5]:0.02504809999999999,64[&rate=0.5]:0.030136023999999928)[&rate=0.5]:0.005674220000000008,182[&rate=0.5]:0.035810243999999936)[&rate=0.5]:0.00653432000000001,193[&rate=0.5]:0.042344563999999946)[&rate=0.5]:0.030760100000000012,((149[&rate=0.5]:0.0035545639999999545,225[&rate=0.5]:0.0035545639999999545)[&rate=0.5]:0.03701579999999999,(150[&rate=0.5]:0.03278913399999994,183[&rate=0.5]:0.03278913399999994)[&rate=0.5]:0.00778123)[&rate=0.5]:0.032534300000000016)[&rate=0.5]:0.001118900000000006)[&rate=0.5]:0.006372550000000005,34[&rate=0.5]:0.08059611399999997)[&rate=0.5]:0.036104899999999995)[&rate=0.5]:0.01780509999999999,(((((33[&rate=0.5]:0.04932779399999995,137[&rate=0.5]:0.04932779399999995)[&rate=0.5]:0.022975400000000007,140[&rate=0.5]:0.07230319399999996)[&rate=0.5]:0.024286200000000008,(((175[&rate=0.5]:0.01783011399999998,178[&rate=0.5]:0.01783011399999998)[&rate=0.5]:0.030125399999999997,234[&rate=0.5]:0.04795551399999998)[&rate=0.5]:0.0010928799999999905,(177[&rate=0.5]:0.006489093999999973,179[&rate=0.5]:0.006489093999999973)[&rate=0.5]:0.042559299999999994)[&rate=0.5]:0.047541)[&rate=0.5]:0.005658030000000008,176[&rate=0.5]:0.10224742399999998)[&rate=0.5]:0.028331999999999996,(95[&rate=0.5]:0.12302618399999997,((((133[&rate=0.5]:0.04635913399999997,192[&rate=0.5]:0.04635913399999997)[&rate=0.5]:0.020866899999999994,169[&rate=0.5]:0.06722603399999996)[&rate=0.5]:0.0473432,((134[&rate=0.5]:0.03880773399999998,200[&rate=0.5]:0.03880773399999998)[&rate=0.5]:0.027699499999999988,136[&rate=0.5]:0.06650723399999997)[&rate=0.5]:0.048061999999999994)[&rate=0.5]:0.008456950000000005,(135[&rate=0.5]:0.09604398399999997,184[&rate=0.5]:0.09604398399999997)[&rate=0.5]:0.026982199999999998)[&rate=0.5]:0.0)[&rate=0.5]:0.007553240000000003)[&rate=0.5]:0.003926689999999983)[&rate=0.5]:0.008412130000000018)[&rate=0.5]:0.0,((((10[&rate=0.5]:0.0021515439999999775,121[&rate=0.5]:0.0021515439999999775)[&rate=0.5]:0.018215800000000004,219[&rate=0.5]:0.02036734399999998)[&rate=0.5]:0.043637099999999984,((14[&rate=0.5]:0.013646043999999968,221[&rate=0.5]:0.013646043999999968)[&rate=0.5]:0.03018689999999999,(117[&rate=0.5]:0.041402283999999956,231[&rate=0.5]:0.041402283999999956)[&rate=0.5]:0.002430660000000001)[&rate=0.5]:0.02017150000000001)[&rate=0.5]:0.0638736,(((67[&rate=0.5]:0.08314738399999996,(130[&rate=0.5]:0.05536748399999997,161[&rate=0.5]:0.05536748399999997)[&rate=0.5]:0.027779899999999996)[&rate=0.5]:0.028638300000000005,(132[&rate=0.5]:0.10711761399999997,160[&rate=0.5]:0.10711761399999997)[&rate=0.5]:0.004668069999999996)[&rate=0.5]:0.0036419599999999996,122[&rate=0.5]:0.11542764399999997)[&rate=0.5]:0.0124504)[&rate=0.5]:0.015040200000000004)[&rate=0.5]:0.0635232,171[&rate=0.5]:0.20644144399999997)[&rate=0.5]:0.027301500000000006,172[&rate=0.5]:0.23374294399999998)[&rate=0.5]:0.0,173[&rate=0.5]:0.23374294399999998)[&rate=1.0]:0.0;

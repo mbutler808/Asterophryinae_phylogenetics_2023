@@ -1,5 +1,0 @@
-BPBM37718_Cophixalus_clapporum,BPBM20215_Cophixalus_cupricarenus	-6
-BPBM20142_Mantophryne_louisiadensis,BPBM20397_Mantophryne_axanthogaster	-4
-BPBM20369_Hylophorbus_extimus,BPBM22761_Hylophorbus_proekes	-4
-BPBM39007_Copiula_sp_3,BPBM17084_Copiula_oxyrhina	-5
-BPBM38904_Barygenys_apodasta,BPBM20126_Barygenys_aff__exsul_1	-6

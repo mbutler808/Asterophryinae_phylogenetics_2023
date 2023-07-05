@@ -1,0 +1,20 @@
+#nexus
+begin sets;
+  charset sia_pos1_sia_pos2_nxc_pos2 = 1-407\3  2-407\3  926-1479\3;
+  charset sia_pos3 = 3-407\3;
+  charset bdnf_pos1_nxc_pos3 = 408-924\3  927-1479\3;
+  charset bdnf_pos2_bdnf_pos3_nxc_pos1 = 409-924\3  410-924\3  925-1479\3;
+  charset cyb_pos1_nd4_pos1 = 1480-1989\3  1990-2475\3;
+  charset cyb_pos2_nd4_pos2 = 1481-1989\3  1991-2475\3;
+  charset cyb_pos3 = 1482-1989\3;
+  charset nd4_pos3 = 1992-2475\3;
+  charpartition mymodels =
+    K2P+I+G4: sia_pos1_sia_pos2_nxc_pos2,
+    TN+F+I+G4: sia_pos3,
+    K2P+G4: bdnf_pos1_nxc_pos3,
+    TVMe+I+G4: bdnf_pos2_bdnf_pos3_nxc_pos1,
+    GTR+F+I+G4: cyb_pos1_nd4_pos1,
+    GTR+F+I+G4: cyb_pos2_nd4_pos2,
+    TIM2+F+ASC+G4: cyb_pos3,
+    TN+F+ASC: nd4_pos3;
+end;

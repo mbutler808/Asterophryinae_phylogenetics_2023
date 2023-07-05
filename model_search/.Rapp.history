@@ -153,12 +153,164 @@ sink(outfile)                                              # start writing to th
 sink()
 sink(outfile)                                              # start writing to the output file#
 	cat("AIC scores of trees from 100 runs after PartitionFinder and tree estimation:\n")#
-	print(dat)#
-	cat(paste("delta aic worst - best: ", round(max(dat$aic) - min(dat$aic))))#
-sink()
-sink(outfile)                                              # start writing to the output file#
-	cat("AIC scores of trees from 100 runs after PartitionFinder and tree estimation:\n")#
 	print(aic)#
 	cat(paste("delta aic worst - best: ", round(max(aic$aic) - min(aic$aic))))#
 sink()
 source("aic.R")
+sys.date()
+?date
+Sys.Date()
+source("aic.R")
+paste("AIC_partifionfinder_100", Sys.Date(), ".txt", sep="" )
+paste("AIC_partifionfinder_100_", Sys.Date(), ".txt", sep="" )
+source("aic.R")
+source("aic.R")
+aic1
+aic2
+head(aic)
+aic$runs[1]
+sub("iqtree", "best_scheme.nex", aic$runs[1])
+file <- sub("iqtree", "best_scheme.nex", aic$runs[1])
+readLines(file)
+lines <- readLines(file)
+length(lines)
+grep("charpartition", lines)
+lines[(grep("charpartition", lines)#
++1):(length(lines)-1)]
+x <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]
+x
+trimws(x)
+files <- sub("iqtree", "best_scheme.nex", aic$runs)
+files
+lines <- readLines(files)
+readLines(files[1])
+lines <- lapply( files,  readLines)
+lines[1]
+sapply( lines, function(x) x[(grep("charpartition", x)+1):(length(x)-1)] )
+sapply( lines, function(x) {#
+	  x[(grep("charpartition", x)+1):(length(x)-1)] #
+	  trimws(x)#
+	})
+sapply( lines, function(x) {#
+	    x[(grep("charpartition", x)+1):(length(x)-1)] #
+	    trimws(x)#
+	  }#
+	)
+sapply( lines, function(x) {#
+	    x[(grep("charpartition", x)+1):(length(x)-1)]
+})
+sapply( lines, function(x) {#
+	    x <- x[(grep("charpartition", x)+1):(length(x)-1)] #
+	    trimws(x)#
+	  }#
+	)
+models <- sapply( contents, function(lines) {#
+	    				x <- lines[(grep("charpartition", lines)+1):(length(lines)-1)] #
+	    				trimws(x)#
+	  				}#
+				 )
+contents <- lapply( files,  readLines)#
+models <- sapply( contents, function(lines) {#
+	    				x <- lines[(grep("charpartition", lines)+1):(length(lines)-1)] #
+	    				trimws(x)#
+	  				}#
+				 )
+modes
+models
+sapply(length(models))
+sapply(models, length)
+rbind(models)
+?"["
+sapply(models, length)
+max(sapply(models, length))
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				trimws(lines)#
+	    				if length(lines < maxl) rbind(lines, rep("", maxl-length(lines)))#
+	  				}#
+				 )
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				lines <- trimws(lines)#
+	    				if length(lines < maxl) rbind(lines, rep("", maxl-length(lines)))#
+	  				}#
+				 )
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				lines <- trimws(lines)#
+	  				}#
+				 )
+files <- lapply( filenames,  readLines)#
+#
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				lines <- trimws(lines)#
+	  				}#
+				 )
+models
+rm(models)
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				lines <- trimws(lines)#
+	  				}#
+				 )
+models
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				lines <- trimws(lines)#
+	  				}#
+				 )
+files
+files[1]
+filenames <- sub("iqtree", "best_scheme.nex", aic$runs)#
+files <- lapply( filenames,  readLines)#
+#
+models <- sapply( files, function(lines) {#
+	    				lines <- lines[(grep("charpartition", lines)+1):(length(lines)-1)]   # grab just the model#
+	    				lines <- trimws(lines)#
+	  				}#
+				 )
+models
+maxl <- max(sapply(models, length))  # maximum number of models
+sapply(models, function(x) rep("", maxl-x))
+maxl
+sapply(models, function(x) rep("", maxl-length(x)))
+sapply(models, function(x) {#
+							pad <- rep("", maxl-length(x)))#
+							cbind(x, pad)#
+})
+models[1]
+models[2]
+models[10]
+models[11]
+models[13]
+models[14]
+models[199]
+x <- models[199]
+rep("", maxl-length(x)))
+rep("", maxl-length(x))
+pad <- rep("", maxl-length(x))#
+							cbind(x, pad)
+pad <- rep("", maxl-length(x))#
+							rbind(x, pad)
+class(x)
+class(models)
+class(models[[1]])
+class(models[1])
+sapply(models, "[", cbind, "")
+sapply(models, "[[", cbind, "")
+sapply(models, "[", 1:maxl)
+models <- sapply(models, "[", 1:maxl)
+class(models)
+class(models[1])
+t(models)
+models
+cbind(filenames, t(models))
+allmodels <- cbind(filenames, t(models))
+write.csv(allmodels, file="allmodels.csv")
+grep("output/", allmodels[1])
+class(allmodels)
+grep("output/", filenames)
+allmodels[grep("output/", filenames),]
+write.csv(allmodels[grep("output/", filenames),], file="allmodels_merge.csv")
+write.csv(allmodels[grep("output/", filenames, invert=T),], file="allmodels_nomerge.csv")

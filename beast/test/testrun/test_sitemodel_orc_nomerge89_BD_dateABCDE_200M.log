@@ -1,0 +1,514 @@
+#
+#model:
+#
+#<?xml version="1.0" encoding="UTF-8" standalone="no"?><input id="posterior" spec="beast.base.inference.CompoundDistribution">
+#    <distribution id="prior" spec="beast.base.inference.CompoundDistribution">
+#        <distribution id="BirthDeath.t:nomerge89" spec="beast.base.evolution.speciation.BirthDeathGernhard08Model">
+#            <parameter id="BDDeathRate.t:nomerge89" lower="0.0" name="relativeDeathRate" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.5</parameter>
+#            <parameter id="BDBirthRate.t:nomerge89" lower="0.0" name="birthDiffRate" spec="beast.base.inference.parameter.RealParameter" upper="10000.0">1.0</parameter>
+#            <tree id="Tree.t:nomerge89" spec="beast.base.evolution.tree.Tree">
+#                <taxonset id="TaxonSet.sia_pos1" spec="beast.base.evolution.alignment.TaxonSet">
+#                    <alignment filter="1-407\3" id="sia_pos1" spec="beast.base.evolution.alignment.FilteredAlignment">
+#                    </alignment>
+#                </taxonset>
+#            </tree>
+#        </distribution>
+#        <prior id="BirthRatePrior.t:nomerge89" name="distribution" x="@BDBirthRate.t:nomerge89">
+#            <Uniform id="Uniform.45" name="distr" upper="1000.0"/>
+#        </prior>
+#        <prior id="DeathRatePrior.t:nomerge89" name="distribution" x="@BDDeathRate.t:nomerge89">
+#            <Uniform id="Uniform.46" name="distr"/>
+#        </prior>
+#        <prior id="ORCRatePriorDistribution.c:BD" name="distribution">
+#            <parameter dimension="484" id="ORCRates.c:BD" lower="1.0E-100" name="x" spec="beast.base.inference.parameter.RealParameter">0.5</parameter>
+#            <LogNormal id="LogNormalDistributionModel.68" meanInRealSpace="true" name="distr">
+#                <parameter estimate="false" id="RealParameter.195" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter id="ORCsigma.c:BD" lower="0.0" name="S" spec="beast.base.inference.parameter.RealParameter">0.2</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="ORCsigmaPrior.c:BD" name="distribution" x="@ORCsigma.c:BD">
+#            <Gamma id="Gamma.18" name="distr">
+#                <parameter estimate="false" id="RealParameter.196" name="alpha" spec="beast.base.inference.parameter.RealParameter">5.0</parameter>
+#                <parameter estimate="false" id="RealParameter.197" name="beta" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="ORCucldMeanPrior.c:BD" name="distribution">
+#            <parameter id="ORCucldMean.c:BD" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.19" name="distr">
+#                <alpha id="Function$Constant.0" spec="beast.base.core.Function$Constant" value="0.1"/>
+#                <beta id="Function$Constant.1" spec="beast.base.core.Function$Constant" value="100.0"/>
+#            </Gamma>
+#        </prior>
+#        <prior id="GammaShapePrior.s:bdnf_pos1" name="distribution">
+#            <parameter id="gammaShape.s:bdnf_pos1" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.3" name="distr">
+#                <parameter estimate="false" id="RealParameter.35" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:bdnf_pos2" name="distribution">
+#            <parameter id="gammaShape.s:bdnf_pos2" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.4" name="distr">
+#                <parameter estimate="false" id="RealParameter.44" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:bdnf_pos3" name="distribution">
+#            <parameter id="gammaShape.s:bdnf_pos3" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.5" name="distr">
+#                <parameter estimate="false" id="RealParameter.53" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:cyb_pos1" name="distribution">
+#            <parameter id="gammaShape.s:cyb_pos1" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.9" name="distr">
+#                <parameter estimate="false" id="RealParameter.89" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:cyb_pos2" name="distribution">
+#            <parameter id="gammaShape.s:cyb_pos2" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.10" name="distr">
+#                <parameter estimate="false" id="RealParameter.98" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:cyb_pos3" name="distribution">
+#            <parameter id="gammaShape.s:cyb_pos3" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.11" name="distr">
+#                <parameter estimate="false" id="RealParameter.107" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:nd4_pos1" name="distribution">
+#            <parameter id="gammaShape.s:nd4_pos1" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.12" name="distr">
+#                <parameter estimate="false" id="RealParameter.116" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:nd4_pos2" name="distribution">
+#            <parameter id="gammaShape.s:nd4_pos2" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.13" name="distr">
+#                <parameter estimate="false" id="RealParameter.125" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:nd4_pos3" name="distribution">
+#            <parameter id="gammaShape.s:nd4_pos3" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.14" name="distr">
+#                <parameter estimate="false" id="RealParameter.134" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:nxc_pos1" name="distribution">
+#            <parameter id="gammaShape.s:nxc_pos1" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.6" name="distr">
+#                <parameter estimate="false" id="RealParameter.62" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:nxc_pos2" name="distribution">
+#            <parameter id="gammaShape.s:nxc_pos2" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.7" name="distr">
+#                <parameter estimate="false" id="RealParameter.71" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:nxc_pos3" name="distribution">
+#            <parameter id="gammaShape.s:nxc_pos3" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.8" name="distr">
+#                <parameter estimate="false" id="RealParameter.80" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:sia_pos1" name="distribution">
+#            <parameter id="gammaShape.s:sia_pos1" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.8" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:sia_pos2" name="distribution">
+#            <parameter id="gammaShape.s:sia_pos2" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.1" name="distr">
+#                <parameter estimate="false" id="RealParameter.17" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="GammaShapePrior.s:sia_pos3" name="distribution">
+#            <parameter id="gammaShape.s:sia_pos3" lower="0.1" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Exponential id="Exponential.2" name="distr">
+#                <parameter estimate="false" id="RealParameter.26" name="mean" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            </Exponential>
+#        </prior>
+#        <prior id="kappa1Prior.s:nd4_pos3" name="distribution">
+#            <parameter id="kappa1.s:nd4_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.66" name="distr">
+#                <parameter estimate="false" id="RealParameter.189" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.190" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa1Prior.s:nxc_pos3" name="distribution">
+#            <parameter id="kappa1.s:nxc_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.64" name="distr">
+#                <parameter estimate="false" id="RealParameter.145" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.146" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa1Prior.s:sia_pos1" name="distribution">
+#            <parameter id="kappa1.s:sia_pos1" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.60" name="distr">
+#                <parameter estimate="false" id="RealParameter.135" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.136" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa1Prior.s:sia_pos3" name="distribution">
+#            <parameter id="kappa1.s:sia_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.62" name="distr">
+#                <parameter estimate="false" id="RealParameter.140" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.141" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa2Prior.s:nd4_pos3" name="distribution">
+#            <parameter id="kappa2.s:nd4_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.67" name="distr">
+#                <parameter estimate="false" id="RealParameter.191" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.192" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa2Prior.s:nxc_pos3" name="distribution">
+#            <parameter id="kappa2.s:nxc_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.65" name="distr">
+#                <parameter estimate="false" id="RealParameter.147" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.148" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa2Prior.s:sia_pos1" name="distribution">
+#            <parameter id="kappa2.s:sia_pos1" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.61" name="distr">
+#                <parameter estimate="false" id="RealParameter.137" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.138" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="kappa2Prior.s:sia_pos3" name="distribution">
+#            <parameter id="kappa2.s:sia_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">2.0</parameter>
+#            <LogNormal id="LogNormalDistributionModel.63" name="distr">
+#                <parameter estimate="false" id="RealParameter.142" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="RealParameter.143" name="S" spec="beast.base.inference.parameter.RealParameter">1.25</parameter>
+#            </LogNormal>
+#        </prior>
+#        <prior id="RateACPrior.s:cyb_pos2" name="distribution">
+#            <parameter id="rateAC.s:cyb_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.0" name="distr">
+#                <parameter estimate="false" id="RealParameter.150" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.151" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateACPrior.s:cyb_pos3" name="distribution">
+#            <parameter id="rateAC.s:cyb_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.6" name="distr">
+#                <parameter estimate="false" id="RealParameter.163" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.164" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateACPrior.s:nd4_pos2" name="distribution">
+#            <parameter id="rateAC.s:nd4_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.12" name="distr">
+#                <parameter estimate="false" id="RealParameter.176" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.177" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateAGPrior.s:cyb_pos2" name="distribution">
+#            <parameter id="rateAG.s:cyb_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.1" name="distr">
+#                <parameter estimate="false" id="RealParameter.152" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.153" name="beta" spec="beast.base.inference.parameter.RealParameter">20.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateAGPrior.s:cyb_pos3" name="distribution">
+#            <parameter id="rateAG.s:cyb_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.7" name="distr">
+#                <parameter estimate="false" id="RealParameter.165" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.166" name="beta" spec="beast.base.inference.parameter.RealParameter">20.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateAGPrior.s:nd4_pos2" name="distribution">
+#            <parameter id="rateAG.s:nd4_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.13" name="distr">
+#                <parameter estimate="false" id="RealParameter.178" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.179" name="beta" spec="beast.base.inference.parameter.RealParameter">20.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateATPrior.s:cyb_pos2" name="distribution">
+#            <parameter id="rateAT.s:cyb_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.2" name="distr">
+#                <parameter estimate="false" id="RealParameter.154" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.155" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateATPrior.s:cyb_pos3" name="distribution">
+#            <parameter id="rateAT.s:cyb_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.8" name="distr">
+#                <parameter estimate="false" id="RealParameter.167" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.168" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateATPrior.s:nd4_pos2" name="distribution">
+#            <parameter id="rateAT.s:nd4_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.14" name="distr">
+#                <parameter estimate="false" id="RealParameter.180" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.181" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateCGPrior.s:cyb_pos2" name="distribution">
+#            <parameter id="rateCG.s:cyb_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.3" name="distr">
+#                <parameter estimate="false" id="RealParameter.156" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.157" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateCGPrior.s:cyb_pos3" name="distribution">
+#            <parameter id="rateCG.s:cyb_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.9" name="distr">
+#                <parameter estimate="false" id="RealParameter.169" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.170" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateCGPrior.s:nd4_pos2" name="distribution">
+#            <parameter id="rateCG.s:nd4_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.15" name="distr">
+#                <parameter estimate="false" id="RealParameter.182" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.183" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateGTPrior.s:cyb_pos2" name="distribution">
+#            <parameter id="rateGT.s:cyb_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.5" name="distr">
+#                <parameter estimate="false" id="RealParameter.160" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.161" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateGTPrior.s:cyb_pos3" name="distribution">
+#            <parameter id="rateGT.s:cyb_pos3" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.11" name="distr">
+#                <parameter estimate="false" id="RealParameter.173" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.174" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <prior id="RateGTPrior.s:nd4_pos2" name="distribution">
+#            <parameter id="rateGT.s:nd4_pos2" lower="0.0" name="x" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#            <Gamma id="Gamma.17" name="distr">
+#                <parameter estimate="false" id="RealParameter.186" name="alpha" spec="beast.base.inference.parameter.RealParameter">0.05</parameter>
+#                <parameter estimate="false" id="RealParameter.187" name="beta" spec="beast.base.inference.parameter.RealParameter">10.0</parameter>
+#            </Gamma>
+#        </prior>
+#        <distribution id="A:.prior" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree.t:nomerge89">
+#            <taxonset id="A:" spec="beast.base.evolution.alignment.TaxonSet">
+#                <taxon id="BPBM37718_Cophixalus_clapporum" spec="beast.base.evolution.alignment.Taxon"/>
+#                <taxon id="BPBM20215_Cophixalus_cupricarenus" spec="beast.base.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <LogNormal id="LogNormalDistributionModel.69" name="distr">
+#                <parameter estimate="false" id="RealParameter.198" name="M" spec="beast.base.inference.parameter.RealParameter">1.792</parameter>
+#                <parameter estimate="false" id="RealParameter.199" lower="0.0" name="S" spec="beast.base.inference.parameter.RealParameter" upper="5.0">0.7</parameter>
+#            </LogNormal>
+#        </distribution>
+#        <distribution id="B:.prior" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree.t:nomerge89">
+#            <taxonset id="B:" spec="beast.base.evolution.alignment.TaxonSet">
+#                <taxon id="BPBM20142_Mantophryne_louisiadensis" spec="beast.base.evolution.alignment.Taxon"/>
+#                <taxon id="BPBM20397_Mantophryne_axanthogaster" spec="beast.base.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <LogNormal id="LogNormalDistributionModel.71" name="distr">
+#                <parameter estimate="false" id="RealParameter.202" name="M" spec="beast.base.inference.parameter.RealParameter">1.386</parameter>
+#                <parameter estimate="false" id="RealParameter.203" lower="0.0" name="S" spec="beast.base.inference.parameter.RealParameter" upper="5.0">0.7</parameter>
+#            </LogNormal>
+#        </distribution>
+#        <distribution id="C:.prior" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree.t:nomerge89">
+#            <taxonset id="C:" spec="beast.base.evolution.alignment.TaxonSet">
+#                <taxon id="BPBM17048_Hylophorbus_cf__rufescens_11" spec="beast.base.evolution.alignment.Taxon"/>
+#                <taxon id="BPBM20369_Hylophorbus_extimus" spec="beast.base.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <LogNormal id="LogNormalDistributionModel.70" name="distr">
+#                <parameter estimate="false" id="RealParameter.200" name="M" spec="beast.base.inference.parameter.RealParameter">1.386</parameter>
+#                <parameter estimate="false" id="RealParameter.201" lower="0.0" name="S" spec="beast.base.inference.parameter.RealParameter" upper="5.0">0.7</parameter>
+#            </LogNormal>
+#        </distribution>
+#        <distribution id="D:.prior" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree.t:nomerge89">
+#            <taxonset id="D:" spec="beast.base.evolution.alignment.TaxonSet">
+#                <taxon id="BPBM39007_Copiula_sp_3" spec="beast.base.evolution.alignment.Taxon"/>
+#                <taxon id="BPBM17084_Copiula_oxyrhina" spec="beast.base.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <LogNormal id="LogNormalDistributionModel.72" name="distr">
+#                <parameter estimate="false" id="RealParameter.204" name="M" spec="beast.base.inference.parameter.RealParameter">1.609</parameter>
+#                <parameter estimate="false" id="RealParameter.205" lower="0.0" name="S" spec="beast.base.inference.parameter.RealParameter" upper="5.0">0.7</parameter>
+#            </LogNormal>
+#        </distribution>
+#        <distribution id="E:.prior" spec="beast.base.evolution.tree.MRCAPrior" tree="@Tree.t:nomerge89">
+#            <taxonset id="E:" spec="beast.base.evolution.alignment.TaxonSet">
+#                <taxon id="BPBM38904_Barygenys_apodasta" spec="beast.base.evolution.alignment.Taxon"/>
+#                <taxon id="BPBM20128_Barygenys_exsul" spec="beast.base.evolution.alignment.Taxon"/>
+#            </taxonset>
+#            <LogNormal id="LogNormalDistributionModel.73" name="distr">
+#                <parameter estimate="false" id="RealParameter.206" name="M" spec="beast.base.inference.parameter.RealParameter">1.792</parameter>
+#                <parameter estimate="false" id="RealParameter.207" lower="0.0" name="S" spec="beast.base.inference.parameter.RealParameter" upper="5.0">0.7</parameter>
+#            </LogNormal>
+#        </distribution>
+#    </distribution>
+#    <distribution id="likelihood" spec="beast.base.inference.CompoundDistribution" useThreads="true">
+#        <distribution data="@sia_pos1" id="treeLikelihood.sia_pos1" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:sia_pos1" shape="@gammaShape.s:sia_pos1" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:sia_pos1" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:sia_pos1" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="tn93.s:sia_pos1" kappa1="@kappa1.s:sia_pos1" kappa2="@kappa2.s:sia_pos1" spec="beast.base.evolution.substitutionmodel.TN93">
+#                    <frequencies data="@sia_pos1" estimate="false" id="equalFreqs.s:sia_pos1" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#            <branchRateModel clock.rate="@ORCucldMean.c:BD" id="OptimisedRelaxedClock.c:BD" rates="@ORCRates.c:BD" spec="beast.base.evolution.branchratemodel.UCRelaxedClockModel" tree="@Tree.t:nomerge89">
+#                <LogNormal S="@ORCsigma.c:BD" id="ORCLogNormalDistributionModel.c:BD" meanInRealSpace="true" name="distr">
+#                    <parameter estimate="false" id="RealParameter.194" name="M" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                </LogNormal>
+#            </branchRateModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.sia_pos2" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="2-407\3" id="sia_pos2" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:sia_pos2" shape="@gammaShape.s:sia_pos2" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:sia_pos2" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:sia_pos2" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="JC69.s:sia_pos2" spec="beast.base.evolution.substitutionmodel.JukesCantor"/>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.sia_pos3" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="3-407\3" id="sia_pos3" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:sia_pos3" shape="@gammaShape.s:sia_pos3" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:sia_pos3" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:sia_pos3" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="tn93.s:sia_pos3" kappa1="@kappa1.s:sia_pos3" kappa2="@kappa2.s:sia_pos3" spec="beast.base.evolution.substitutionmodel.TN93">
+#                    <frequencies data="@sia_pos3" id="empiricalFreqs.s:sia_pos3" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.bdnf_pos1" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="408-924\3" id="bdnf_pos1" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:bdnf_pos1" shape="@gammaShape.s:bdnf_pos1" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:bdnf_pos1" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:bdnf_pos1" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_K80.s:bdnf_pos1" spec="substmodels.nucleotide.K80">
+#                    <parameter dimension="2" id="K80rates.s:bdnf_pos1" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0</parameter>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.bdnf_pos2" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="409-924\3" id="bdnf_pos2" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:bdnf_pos2" shape="@gammaShape.s:bdnf_pos2" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:bdnf_pos2" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:bdnf_pos2" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_TVMef.s:bdnf_pos2" spec="substmodels.nucleotide.TVMef">
+#                    <parameter dimension="5" id="TVMefrates.s:bdnf_pos2" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0 1.0 1.0 1.0</parameter>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.bdnf_pos3" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="410-924\3" id="bdnf_pos3" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:bdnf_pos3" shape="@gammaShape.s:bdnf_pos3" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:bdnf_pos3" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:bdnf_pos3" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_TPM1.s:bdnf_pos3" spec="substmodels.nucleotide.TPM1">
+#                    <parameter dimension="3" id="TPM1rates.s:bdnf_pos3" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0 1.0</parameter>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.nxc_pos1" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="925-1479\3" id="nxc_pos1" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:nxc_pos1" shape="@gammaShape.s:nxc_pos1" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:nxc_pos1" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:nxc_pos1" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_TIM2uf.s:nxc_pos1" spec="substmodels.nucleotide.TIM2uf">
+#                    <parameter dimension="4" id="TIM2ufrates.s:nxc_pos1" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0 1.0 1.0</parameter>
+#                    <frequencies id="TIM2ufFreqs.s:nxc_pos1" spec="beast.base.evolution.substitutionmodel.Frequencies">
+#                        <parameter dimension="4" id="TIM2uffreqParameter.s:nxc_pos1" lower="0.0" name="frequencies" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.25</parameter>
+#                    </frequencies>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.nxc_pos2" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="926-1479\3" id="nxc_pos2" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:nxc_pos2" shape="@gammaShape.s:nxc_pos2" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:nxc_pos2" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:nxc_pos2" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_TIM3uf.s:nxc_pos2" spec="substmodels.nucleotide.TIM3uf">
+#                    <parameter dimension="4" id="TIM3ufrates.s:nxc_pos2" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0 1.0 1.0</parameter>
+#                    <frequencies id="TIM3ufFreqs.s:nxc_pos2" spec="beast.base.evolution.substitutionmodel.Frequencies">
+#                        <parameter dimension="4" id="TIM3uffreqParameter.s:nxc_pos2" lower="0.0" name="frequencies" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.25</parameter>
+#                    </frequencies>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.nxc_pos3" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="927-1479\3" id="nxc_pos3" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:nxc_pos3" shape="@gammaShape.s:nxc_pos3" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:nxc_pos3" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:nxc_pos3" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.0</parameter>
+#                <substModel id="tn93.s:nxc_pos3" kappa1="@kappa1.s:nxc_pos3" kappa2="@kappa2.s:nxc_pos3" spec="beast.base.evolution.substitutionmodel.TN93">
+#                    <frequencies data="@nxc_pos3" id="empiricalFreqs.s:nxc_pos3" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.cyb_pos1" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="1480-1989\3" id="cyb_pos1" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:cyb_pos1" shape="@gammaShape.s:cyb_pos1" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:cyb_pos1" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:cyb_pos1" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_TPM2.s:cyb_pos1" spec="substmodels.nucleotide.TPM2">
+#                    <parameter dimension="3" id="TPM2rates.s:cyb_pos1" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0 1.0</parameter>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.cyb_pos2" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="1481-1989\3" id="cyb_pos2" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:cyb_pos2" shape="@gammaShape.s:cyb_pos2" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:cyb_pos2" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:cyb_pos2" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="gtr.s:cyb_pos2" rateAC="@rateAC.s:cyb_pos2" rateAG="@rateAG.s:cyb_pos2" rateAT="@rateAT.s:cyb_pos2" rateCG="@rateCG.s:cyb_pos2" rateGT="@rateGT.s:cyb_pos2" spec="beast.base.evolution.substitutionmodel.GTR">
+#                    <parameter estimate="false" id="rateCT.s:cyb_pos2" lower="0.0" name="rateCT" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                    <frequencies data="@cyb_pos2" id="empiricalFreqs.s:cyb_pos2" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.cyb_pos3" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="1482-1989\3" id="cyb_pos3" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:cyb_pos3" shape="@gammaShape.s:cyb_pos3" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:cyb_pos3" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:cyb_pos3" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.0</parameter>
+#                <substModel id="gtr.s:cyb_pos3" rateAC="@rateAC.s:cyb_pos3" rateAG="@rateAG.s:cyb_pos3" rateAT="@rateAT.s:cyb_pos3" rateCG="@rateCG.s:cyb_pos3" rateGT="@rateGT.s:cyb_pos3" spec="beast.base.evolution.substitutionmodel.GTR">
+#                    <parameter estimate="false" id="rateCT.s:cyb_pos3" lower="0.0" name="rateCT" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                    <frequencies data="@cyb_pos3" id="empiricalFreqs.s:cyb_pos3" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.nd4_pos1" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="1990-2475\3" id="nd4_pos1" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:nd4_pos1" shape="@gammaShape.s:nd4_pos1" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:nd4_pos1" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:nd4_pos1" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="Standard_TIM2uf.s:nd4_pos1" spec="substmodels.nucleotide.TIM2uf">
+#                    <parameter dimension="4" id="TIM2ufrates.s:nd4_pos1" lower="0.0" name="rates" spec="beast.base.inference.parameter.RealParameter">1.0 1.0 1.0 1.0</parameter>
+#                    <frequencies id="TIM2ufFreqs.s:nd4_pos1" spec="beast.base.evolution.substitutionmodel.Frequencies">
+#                        <parameter dimension="4" id="TIM2uffreqParameter.s:nd4_pos1" lower="0.0" name="frequencies" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.25</parameter>
+#                    </frequencies>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.nd4_pos2" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="1991-2475\3" id="nd4_pos2" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:nd4_pos2" shape="@gammaShape.s:nd4_pos2" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:nd4_pos2" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:nd4_pos2" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.1</parameter>
+#                <substModel id="gtr.s:nd4_pos2" rateAC="@rateAC.s:nd4_pos2" rateAG="@rateAG.s:nd4_pos2" rateAT="@rateAT.s:nd4_pos2" rateCG="@rateCG.s:nd4_pos2" rateGT="@rateGT.s:nd4_pos2" spec="beast.base.evolution.substitutionmodel.GTR">
+#                    <parameter estimate="false" id="rateCT.s:nd4_pos2" lower="0.0" name="rateCT" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                    <frequencies data="@nd4_pos2" id="empiricalFreqs.s:nd4_pos2" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#        <distribution branchRateModel="@OptimisedRelaxedClock.c:BD" id="treeLikelihood.nd4_pos3" spec="beast.base.evolution.likelihood.ThreadedTreeLikelihood" tree="@Tree.t:nomerge89">
+#            <data data="@beast_alignment_asterophryinae_20230527" filter="1992-2475\3" id="nd4_pos3" spec="beast.base.evolution.alignment.FilteredAlignment"/>
+#            <siteModel gammaCategoryCount="4" id="SiteModel.s:nd4_pos3" shape="@gammaShape.s:nd4_pos3" spec="beast.base.evolution.sitemodel.SiteModel">
+#                <parameter estimate="false" id="mutationRate.s:nd4_pos3" lower="0.0" name="mutationRate" spec="beast.base.inference.parameter.RealParameter">1.0</parameter>
+#                <parameter estimate="false" id="proportionInvariant.s:nd4_pos3" lower="0.0" name="proportionInvariant" spec="beast.base.inference.parameter.RealParameter" upper="1.0">0.0</parameter>
+#                <substModel id="tn93.s:nd4_pos3" kappa1="@kappa1.s:nd4_pos3" kappa2="@kappa2.s:nd4_pos3" spec="beast.base.evolution.substitutionmodel.TN93">
+#                    <frequencies data="@nd4_pos3" id="empiricalFreqs.s:nd4_pos3" spec="beast.base.evolution.substitutionmodel.Frequencies"/>
+#                </substModel>
+#            </siteModel>
+#        </distribution>
+#    </distribution>
+#    <distribution id="fossilCalibrations" spec="beast.base.inference.CompoundDistribution"/>
+#</input>
+#
+Sample	posterior	likelihood	prior	treeLikelihood.bdnf_pos1	treeLikelihood.bdnf_pos2	treeLikelihood.bdnf_pos3	treeLikelihood.cyb_pos1	treeLikelihood.cyb_pos2	treeLikelihood.cyb_pos3	treeLikelihood.nd4_pos1	treeLikelihood.nd4_pos2	treeLikelihood.nd4_pos3	treeLikelihood.nxc_pos1	treeLikelihood.nxc_pos2	treeLikelihood.nxc_pos3	treeLikelihood.sia_pos1	treeLikelihood.sia_pos2	treeLikelihood.sia_pos3	Tree.height	Tree.treeLength	gammaShape.bdnf_pos1	gammaShape.bdnf_pos2	gammaShape.bdnf_pos3	gammaShape.cyb_pos1	gammaShape.cyb_pos2	gammaShape.cyb_pos3	gammaShape.nd4_pos1	gammaShape.nd4_pos2	gammaShape.nd4_pos3	gammaShape.nxc_pos1	gammaShape.nxc_pos2	gammaShape.nxc_pos3	gammaShape.sia_pos1	gammaShape.sia_pos2	gammaShape.sia_pos3	kappa1.nd4_pos3	kappa1.nxc_pos3	kappa1.sia_pos1	kappa1.sia_pos3	kappa2.nd4_pos3	kappa2.nxc_pos3	kappa2.sia_pos1	kappa2.sia_pos3	RateAC-Standard_K80.bdnf_pos1	RateAG-Standard_K80.bdnf_pos1	RateAT-Standard_K80.bdnf_pos1	RateCG-Standard_K80.bdnf_pos1	RateCT-Standard_K80.bdnf_pos1	RateGT-Standard_K80.bdnf_pos1	RateAC-Standard_TVMef.bdnf_pos2	RateAG-Standard_TVMef.bdnf_pos2	RateAT-Standard_TVMef.bdnf_pos2	RateCG-Standard_TVMef.bdnf_pos2	RateCT-Standard_TVMef.bdnf_pos2	RateGT-Standard_TVMef.bdnf_pos2	RateAC-Standard_TPM1.bdnf_pos3	RateAG-Standard_TPM1.bdnf_pos3	RateAT-Standard_TPM1.bdnf_pos3	RateCG-Standard_TPM1.bdnf_pos3	RateCT-Standard_TPM1.bdnf_pos3	RateGT-Standard_TPM1.bdnf_pos3	TIM2uffreqParameter.nd4_pos1.1	TIM2uffreqParameter.nd4_pos1.2	TIM2uffreqParameter.nd4_pos1.3	TIM2uffreqParameter.nd4_pos1.4	TIM2uffreqParameter.nxc_pos1.1	TIM2uffreqParameter.nxc_pos1.2	TIM2uffreqParameter.nxc_pos1.3	TIM2uffreqParameter.nxc_pos1.4	RateAC-Standard_TIM2uf.nd4_pos1	RateAG-Standard_TIM2uf.nd4_pos1	RateAT-Standard_TIM2uf.nd4_pos1	RateCG-Standard_TIM2uf.nd4_pos1	RateCT-Standard_TIM2uf.nd4_pos1	RateGT-Standard_TIM2uf.nd4_pos1	RateAC-Standard_TIM2uf.nxc_pos1	RateAG-Standard_TIM2uf.nxc_pos1	RateAT-Standard_TIM2uf.nxc_pos1	RateCG-Standard_TIM2uf.nxc_pos1	RateCT-Standard_TIM2uf.nxc_pos1	RateGT-Standard_TIM2uf.nxc_pos1	TIM3uffreqParameter.nxc_pos2.1	TIM3uffreqParameter.nxc_pos2.2	TIM3uffreqParameter.nxc_pos2.3	TIM3uffreqParameter.nxc_pos2.4	RateAC-Standard_TIM3uf.nxc_pos2	RateAG-Standard_TIM3uf.nxc_pos2	RateAT-Standard_TIM3uf.nxc_pos2	RateCG-Standard_TIM3uf.nxc_pos2	RateCT-Standard_TIM3uf.nxc_pos2	RateGT-Standard_TIM3uf.nxc_pos2	RateAC-Standard_TPM2.cyb_pos1	RateAG-Standard_TPM2.cyb_pos1	RateAT-Standard_TPM2.cyb_pos1	RateCG-Standard_TPM2.cyb_pos1	RateCT-Standard_TPM2.cyb_pos1	RateGT-Standard_TPM2.cyb_pos1	rateAC.cyb_pos2	rateAC.cyb_pos3	rateAC.nd4_pos2	rateAG.cyb_pos2	rateAG.cyb_pos3	rateAG.nd4_pos2	rateAT.cyb_pos2	rateAT.cyb_pos3	rateAT.nd4_pos2	rateCG.cyb_pos2	rateCG.cyb_pos3	rateCG.nd4_pos2	rateGT.cyb_pos2	rateGT.cyb_pos3	rateGT.nd4_pos2	ORCsigma	ORCRatesStat.mean	ORCRatesStat.variance	ORCRatesStat.coefficientOfVariation	BirthDeath	BDBirthRate	BDDeathRate	monophyletic(A:)	logP(mrca(A:))	mrca.age(A:)	ORCucldMean	monophyletic(C:)	logP(mrca(C:))	mrca.age(C:)	monophyletic(B:)	logP(mrca(B:))	mrca.age(B:)	monophyletic(D:)	logP(mrca(D:))	mrca.age(D:)	monophyletic(E:)	logP(mrca(E:))	mrca.age(E:)
+0	-105386.31458167212	-103393.1844833032	-1993.1300983689273	-3114.2328030737863	-1035.6542120828565	-652.100314637481	-8090.232037811904	-3191.495650282709	-33337.08820634516	-10010.007317883224	-3770.9899364331586	-29559.704655451773	-1225.8847065579193	-1097.6911837823202	-3550.175265405292	-689.6749851576075	-495.5959556395772	-3572.657252758418	0.23374294399999998	14.602579098900001	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	2.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	0.25	0.25	0.25	0.25	0.25	0.25	0.25	0.25	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	0.25	0.25	0.25	0.25	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	1.0	0.2	0.5	0.0	0.0	263.35197802982816	1.0	0.7747627474617202	1	-19.970558609820916	0.05603456999999998	1.0	0	-19.559961189439388	0.03735651399999998	1	-19.55994290672823	0.03735659399999994	1	-19.78176282731827	0.046695494000000004	0	-19.97056104784193	0.056034553999999986
