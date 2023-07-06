@@ -82,3 +82,4 @@ Warning: removing transform class beast.base.inference.operator.kernel.Transform
 Warning: removing transform class beast.base.inference.operator.kernel.Transform$LogConstrainedSumTransform because it should have at least 2 dimensions but it has 0
 Warning: removing transform class beast.base.inference.operator.kernel.Transform$LogConstrainedSumTransform because it should have at least 2 dimensions but it has 0
 Warning: removing transform class beast.base.inference.operator.kernel.Transform$LogConstrainedSumTransform because it should have at least 2 dimensions but it has 0
+slurmstepd: error: *** JOB 44229444 ON node-0103 CANCELLED AT 2023-07-06T13:21:22 DUE TO TIME LIMIT ***
