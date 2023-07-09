@@ -20,4 +20,4 @@ source ~/.bash_profile
 
 module load bio/Beast/2.7.1-GCC-10.3.0
 module load numlib/beagle-lib/3.0.2-intel-2018.5.274
-beast -beagle_CPU asterophryinae_20230702.xml
+beast -resume -beagle_CPU asterophryinae_20230702.xml
